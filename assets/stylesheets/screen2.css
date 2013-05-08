@@ -68,6 +68,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 9, ../sass/screen2.scss */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 10, ../sass/screen2.scss */
+body {
+  font-family: Arial;
+  color: white;
+  font-size: 25px;
+}
+
+/* line 12, ../sass/screen2.scss */
 .stageFrame {
   margin: 100px auto 0;
   width: 800px;
@@ -79,36 +92,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   perspective: 800px;
   position: relative;
 }
-/* line 10, ../sass/screen2.scss */
+/* line 13, ../sass/screen2.scss */
 .stageFrame .stage {
   width: 800px;
-  -webkit-transform: rotateY(0deg) translate3d(0, 0, 0);
-  -moz-transform: rotateY(0deg) translate3d(0, 0, 0);
-  -ms-transform: rotateY(0deg) translate3d(0, 0, 0);
-  -o-transform: rotateY(0deg) translate3d(0, 0, 0);
-  transform: rotateY(0deg) translate3d(0, 0, 0);
-  -webkit-transform-origin: 0 0 0;
-  -moz-transform-origin: 0 0 0;
-  -ms-transform-origin: 0 0 0;
-  -o-transform-origin: 0 0 0;
-  transform-origin: 0 0 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: rotateY(45deg);
-  -moz-transform: rotateY(45deg);
-  -ms-transform: rotateY(45deg);
-  -o-transform: rotateY(45deg);
-  transform: rotateY(45deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
   -webkit-transform-origin: 400px 0 -400px;
   -moz-transform-origin: 400px 0 -400px;
   -ms-transform-origin: 400px 0 -400px;
   -o-transform-origin: 400px 0 -400px;
   transform-origin: 400px 0 -400px;
 }
-/* line 12, ../sass/screen2.scss */
+/* line 17, ../sass/screen2.scss */
 .stageFrame .stage .website {
   width: 800px;
   height: 600px;
@@ -118,10 +125,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #ffff00), color-stop(50%, #008000), color-stop(100%, #ff0000));
+  background-image: -webkit-linear-gradient(left top, #ffff00, #008000, #ff0000);
+  background-image: -moz-linear-gradient(left top, #ffff00, #008000, #ff0000);
+  background-image: -o-linear-gradient(left top, #ffff00, #008000, #ff0000);
+  background-image: linear-gradient(left top, #ffff00, #008000, #ff0000);
+  padding: 20px;
 }
-/* line 13, ../sass/screen2.scss */
+/* line 19, ../sass/screen2.scss */
 .stageFrame .stage .website.website1 {
-  border: 2px solid green;
   -webkit-transform: rotateY(90deg) translate3d(800px, 0px, 0px);
   -moz-transform: rotateY(90deg) translate3d(800px, 0px, 0px);
   -ms-transform: rotateY(90deg) translate3d(800px, 0px, 0px);
@@ -133,13 +150,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-transform-origin: right 0 0;
   transform-origin: right 0 0;
 }
-/* line 14, ../sass/screen2.scss */
-.stageFrame .stage .website.website2 {
-  border: 2px solid blue;
-}
-/* line 17, ../sass/screen2.scss */
+/* line 23, ../sass/screen2.scss */
 .stageFrame .anim {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 10px;
+  top: 10px;
+}
+/* line 25, ../sass/screen2.scss */
+.stageFrame.open .stage {
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
 }
