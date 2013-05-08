@@ -1,0 +1,231 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  font-family: Arial;
+}
+
+/* line 13, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 14, ../sass/screen.scss */
+.anim {
+  position: absolute;
+  top: 200px;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+
+/* line 15, ../sass/screen.scss */
+.frame {
+  float: left;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+/* line 16, ../sass/screen.scss */
+.frame.frameLeft {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffff00), color-stop(50%, #008000), color-stop(100%, #ff0000));
+  background-image: -webkit-linear-gradient(left, #ffff00, #008000, #ff0000);
+  background-image: -moz-linear-gradient(left, #ffff00, #008000, #ff0000);
+  background-image: -o-linear-gradient(left, #ffff00, #008000, #ff0000);
+  background-image: linear-gradient(left, #ffff00, #008000, #ff0000);
+}
+/* line 17, ../sass/screen.scss */
+.frame.frameLeft .anim {
+  right: 0;
+}
+/* line 19, ../sass/screen.scss */
+.frame.frameRight {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ff0000), color-stop(50%, #008000), color-stop(100%, #ffff00));
+  background-image: -webkit-linear-gradient(left, #ff0000, #008000, #ffff00);
+  background-image: -moz-linear-gradient(left, #ff0000, #008000, #ffff00);
+  background-image: -o-linear-gradient(left, #ff0000, #008000, #ffff00);
+  background-image: linear-gradient(left, #ff0000, #008000, #ffff00);
+}
+/* line 20, ../sass/screen.scss */
+.frame.frameRight .anim {
+  left: 0;
+}
+
+/* line 23, ../sass/screen.scss */
+.stageFrame {
+  float: left;
+  width: 0;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  -moz-transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  -o-transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+}
+/* line 24, ../sass/screen.scss */
+.stageFrame .stage {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  margin: 0 auto;
+  left: -250px;
+  -webkit-transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  -moz-transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  -o-transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+}
+/* line 25, ../sass/screen.scss */
+.stageFrame .stage .col {
+  width: 250px;
+  height: 500px;
+  background: grey;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  -webkit-transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  -moz-transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  -o-transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  transition: all 1s cubic-bezier(0, 0.99, 0.99, 0.99);
+  color: white;
+  overflow: hidden;
+}
+/* line 26, ../sass/screen.scss */
+.stageFrame .stage .col .anim {
+  top: 400px;
+}
+/* line 27, ../sass/screen.scss */
+.stageFrame .stage .col.col1 {
+  left: 0;
+  -webkit-transform: rotateY(90deg) translate3d(250px, 0, 0);
+  -moz-transform: rotateY(90deg) translate3d(250px, 0, 0);
+  -ms-transform: rotateY(90deg) translate3d(250px, 0, 0);
+  -o-transform: rotateY(90deg) translate3d(250px, 0, 0);
+  transform: rotateY(90deg) translate3d(250px, 0, 0);
+  -webkit-transform-origin: right 0 0;
+  -moz-transform-origin: right 0 0;
+  -ms-transform-origin: right 0 0;
+  -o-transform-origin: right 0 0;
+  transform-origin: right 0 0;
+}
+/* line 28, ../sass/screen.scss */
+.stageFrame .stage .col.col1 .anim {
+  right: -20px;
+}
+/* line 30, ../sass/screen.scss */
+.stageFrame .stage .col.col2 {
+  left: 50%;
+  -webkit-transform: rotateY(-90deg) translate3d(-250px, 0, 0);
+  -moz-transform: rotateY(-90deg) translate3d(-250px, 0, 0);
+  -ms-transform: rotateY(-90deg) translate3d(-250px, 0, 0);
+  -o-transform: rotateY(-90deg) translate3d(-250px, 0, 0);
+  transform: rotateY(-90deg) translate3d(-250px, 0, 0);
+  -webkit-transform-origin: 0 0 0;
+  -moz-transform-origin: 0 0 0;
+  -ms-transform-origin: 0 0 0;
+  -o-transform-origin: 0 0 0;
+  transform-origin: 0 0 0;
+}
+/* line 31, ../sass/screen.scss */
+.stageFrame .stage .col.col2 .anim {
+  left: -20px;
+}
+/* line 35, ../sass/screen.scss */
+.stageFrame.open {
+  width: 500px;
+}
+/* line 36, ../sass/screen.scss */
+.stageFrame.open .stage {
+  left: 0;
+}
+/* line 38, ../sass/screen.scss */
+.stageFrame.open .stage .col.col1 {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+/* line 39, ../sass/screen.scss */
+.stageFrame.open .stage .col.col2 {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
