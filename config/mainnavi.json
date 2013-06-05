@@ -1,0 +1,7 @@
+{
+    "mainnavi": [
+        { "label":"Bier Rezesionen" ,"href":"/pages/beer", "target":"_self" }, 
+        { "label":"Demos" ,"href":"/pages/demos", "target":"_self" },
+        { "label":"Holzwerken" ,"href":"/pages/holz", "target":"_self" }
+    ]    
+}

@@ -46,7 +46,7 @@ h1 { font-size:20px; line-height:25px; margin:10px 0 20px; }
 p { margin:10px 0; }
 a { outline:none; color:black; }
 .clear { clear:both; height:0; line-height:0; }
-.website { width:1000px; margin:20px auto 0; background:white; position:relative;
+.website { width:1000px; margin:40px auto 0; background:white; position:relative;
     &:before { content:" "; position:absolute; left:0; top:-10px; height:20px; width:100%; background:white; @include skew(0, -1deg) }
     &:after { content:" "; position:absolute; left:0; bottom:-10px; height:20px; width:100%; background:white; @include skew(0, -1deg) }
     header { padding:20px;
