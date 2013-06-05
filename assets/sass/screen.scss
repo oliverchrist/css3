@@ -1,44 +1,76 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
 @import "compass/css3";
 
-$transFunc1: cubic-bezier(.00,.99,.99,.99);
-$transFunc2: cubic-bezier(.00,.99,.99,.99);
+@import "global/*.png";
+@include all-global-sprites;
 
-body { font-family:Arial; }
-* { box-sizing:border-box; -moz-box-sizing:border-box; }
-.anim { position:absolute; top:200px; font-size:50px; text-decoration:none; color:white; font-weight:bold; outline:none; }
-.frame { float:left; width:500px; height:500px; position:relative;
-    &.frameLeft { @include background-image(linear-gradient(left,yellow , green,red ));
-        .anim { right:0; }
-    }
-    &.frameRight { @include background-image(linear-gradient(left, red, green, yellow));
-        .anim { left:0; }
-    }
+@-webkit-keyframes bganim1 {
+  0%   { -webkit-transform:translate(0, 0); transform:translate(0, 0); }
+  100% { -webkit-transform:translate(10px, 20px); transform:translate(10px, 20px); }
 }
-.stageFrame { float:left; width:0; height:500px; overflow:hidden; position:relative; @include transition(all 1s $transFunc1);
-    .stage { width:500px; height:500px; position:absolute; @include perspective( 800px ); margin:0 auto; left:-250px; @include transition(all 1s $transFunc2);
-        .col { width:250px; height:500px; background:grey; position:absolute; top:0; padding:20px; @include transition(all 1s $transFunc2); color:white; overflow:hidden;
-            .anim { top:400px; }
-            &.col1 { left:0; @include transform( rotateY(90deg) translate3d(250px,0,0) ); @include apply-origin( right 0 0, false );
-                .anim { right:-20px; }
-            }
-            &.col2 { left:50%; @include transform( rotateY(-90deg) translate3d(-250px,0,0) ); @include apply-origin( 0 0 0, false );
-                .anim { left:-20px; }
+@-webkit-keyframes bganim2 {
+  0%   { -webkit-transform:translate(0, 0); }
+  100% { -webkit-transform:translate(-10px, -20px); }
+}
+@-webkit-keyframes bganim3 {
+  0%   { -webkit-transform:translate(0, 0); }
+  100% { -webkit-transform:translate(-10px, 20px); }
+}
+
+@mixin shake($anim) {
+    -webkit-animation-name: $anim;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    animation-name: $anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@mixin underline($color, $offset) {
+    position:relative;
+    &:after { content:" "; height:1px; background:$color; @include rotate(-1deg, 0, 0); position:absolute; left:0; bottom:$offset; width:100%; }
+}
+@mixin overline($color, $offset:0) {
+    position:relative;
+    &:before { content:" "; height:1px; background:$color; @include rotate(-1deg, 0, 0); position:absolute; left:0; top:$offset; width:100%; }
+}
+
+* { box-sizing:border-box; -moz-box-sizing:border-box; }
+body { font-family:Arial; font-size:16px; line-height:20px; @include background-image(linear-gradient(left,white , black 50%, white)); }
+h1 { font-size:20px; line-height:25px; margin:10px 0 20px; }
+p { margin:10px 0; }
+a { outline:none; color:black; }
+.clear { clear:both; height:0; line-height:0; }
+.website { width:1000px; margin:20px auto 0; background:white; position:relative;
+    &:before { content:" "; position:absolute; left:0; top:-10px; height:20px; width:100%; background:white; @include skew(0, -1deg) }
+    &:after { content:" "; position:absolute; left:0; bottom:-10px; height:20px; width:100%; background:white; @include skew(0, -1deg) }
+    header { padding:20px;
+        .global-logo { display:inline-block; width:348px; height:96px; }
+        @include underline(black, 10px);
+        .mainnavi { position:absolute; right:20px; bottom:20px;
+            a { display:inline-block; padding:7px 10px; font-size:20px; text-decoration:none; font-weight:bold; position:relative;
+                &:hover { text-decoration:underline; }
             }
         }
     }
-    &.open { width:500px;
-        .stage { left:0;
-            .col {
-                &.col1 { @include transform( rotateY(0deg) ); }
-                &.col2 { @include transform( rotateY(0deg) ); }
+    #main {
+        .subnavi { float:left; width:20%;
+            a { display:block; padding:7px 10px; font-size:20px; text-decoration:none; font-weight:bold;
+            
+                &:first-child { border-top:none; }
+                &:hover { text-decoration:underline; }
+                + a {
+                    @include overline(#d52c1f, 0);
+                }
             }
         }
-        
+        .content { float:left; width:60%; padding:20px 0 40px 20px; }
+        > aside { float:left; width:20%; min-height:500px; }
     }
+    footer { padding:20px 17px; @include overline(black); }
 }

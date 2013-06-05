@@ -1,0 +1,17 @@
+/* line 1, ../sass/demo3.scss */
+#graph {
+  position: relative;
+  margin: 20px auto 0;
+  border: 5px solid black;
+  width: 510px;
+  height: 750px;
+}
+
+/* line 2, ../sass/demo3.scss */
+.line {
+  position: absolute;
+  top: 300px;
+  width: 1px;
+  height: 50px;
+  background: red;
+}
