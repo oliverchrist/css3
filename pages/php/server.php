@@ -12,8 +12,10 @@ $basePath = $_SERVER['DOCUMENT_ROOT'];
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Bier Rezesionen</h1>
-                    <p>Hier stelle ich meine bereits verkosteten Biere vor</p>
+                    <h1>$_SERVER</h1>
+                    <pre>
+                        <?php var_dump($_SERVER); ?>
+                    </pre>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>

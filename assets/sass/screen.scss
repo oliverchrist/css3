@@ -4,6 +4,7 @@
 @import "global/*.png";
 @include all-global-sprites;
 
+/*
 @-webkit-keyframes bganim1 {
   0%   { -webkit-transform:translate(0, 0); transform:translate(0, 0); }
   100% { -webkit-transform:translate(10px, 20px); transform:translate(10px, 20px); }
@@ -30,7 +31,7 @@
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
 }
-
+*/
 @mixin underline($color, $offset) {
     position:relative;
     &:after { content:" "; height:1px; background:$color; @include rotate(-1deg, 0, 0); position:absolute; left:0; bottom:$offset; width:100%; }
@@ -42,30 +43,44 @@
 
 * { box-sizing:border-box; -moz-box-sizing:border-box; }
 body { font-family:Arial; font-size:16px; line-height:20px; @include background-image(linear-gradient(left,white , black 50%, white)); }
-h1 { font-size:20px; line-height:25px; margin:10px 0 20px; }
-p { margin:10px 0; }
+h1 { font-size:20px; line-height:25px; margin:10px 0 40px; font-weight:bold; @include underline(black, -5px); }
+p { margin:10px 0 20px; }
 a { outline:none; color:black; }
+.floatLeft { float:left; margin-right:20px; }
 .clear { clear:both; height:0; line-height:0; }
-.website { width:1000px; margin:40px auto 0; background:white; position:relative;
+.website { width:1000px; margin:40px auto; background:white; position:relative;
     &:before { content:" "; position:absolute; left:0; top:-10px; height:20px; width:100%; background:white; @include skew(0, -1deg) }
     &:after { content:" "; position:absolute; left:0; bottom:-10px; height:20px; width:100%; background:white; @include skew(0, -1deg) }
     header { padding:20px;
         .global-logo { display:inline-block; width:348px; height:96px; }
         @include underline(black, 10px);
         .mainnavi { position:absolute; right:20px; bottom:20px;
-            a { display:inline-block; padding:7px 10px; font-size:20px; text-decoration:none; font-weight:bold; position:relative;
+            a { display:inline-block; padding:7px 10px; font-size:20px; text-decoration:none; position:relative;
                 &:hover { text-decoration:underline; }
+                &.current { background:#d52c1f; color:white; }
             }
         }
     }
     #main {
         .subnavi { float:left; width:20%;
-            a { display:block; padding:7px 10px; font-size:20px; text-decoration:none; font-weight:bold;
-            
+            a { display:block; padding:7px 10px; font-size:15px; line-height:20px; text-decoration:none; @include overline(#d52c1f, 0);
                 &:first-child { border-top:none; }
                 &:hover { text-decoration:underline; }
-                + a {
-                    @include overline(#d52c1f, 0);
+                &.current { color:#d52c1f; }
+            }
+            > a {
+                &:first-child {
+                    &::before { display:none; }
+                }
+            }
+            > div {
+                > a {
+                    padding-left:20px;
+                }
+                div {
+                    > a {
+                        padding-left:40px;
+                    }
                 }
             }
         }

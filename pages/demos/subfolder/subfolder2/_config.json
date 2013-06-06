@@ -1,0 +1,7 @@
+{
+    "subnavi": [
+        { "label":"Test 1" ,"href":"test1.php", "target":"_self" },
+        { "label":"Test 2" ,"href":"test2.php", "target":"_self" },
+        { "label":"Test 3" ,"href":"test3.php", "target":"_self" }
+    ]    
+}

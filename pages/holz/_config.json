@@ -1,0 +1,7 @@
+{
+    "subnavi": [
+        { "label":"Hocker" ,"href":"hocker.php", "target":"_self" },
+        { "label":"Butter Streicher" ,"href":"butterStreicher.php", "target":"_self" },
+        { "label":"Tisch" ,"href":"tisch.php", "target":"_self" }
+    ]    
+}

@@ -1,0 +1,5 @@
+{
+    "subnavi": [
+        { "label":"lorem ipsum" ,"href":"file.php", "target":"_self", "isSubfolder":true }
+    ]    
+}

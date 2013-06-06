@@ -1,0 +1,7 @@
+{
+    "subnavi": [
+        { "label":"Augustiner Bräu" ,"href":"augustinerbraeu.php", "target":"_self" },
+        { "label":"Büble" ,"href":"bueble.php", "target":"_self" },
+        { "label":"Lammsbräu" ,"href":"lammsbraeu.php", "target":"_self" }
+    ]    
+}

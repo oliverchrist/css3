@@ -3,14 +3,11 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
 @import "compass/css3";
 
 $transFunc1: cubic-bezier(.00,.99,.99,.99);
 $transFunc2: cubic-bezier(.00,.99,.99,.99);
 
-body { font-family:Arial; }
-* { box-sizing:border-box; -moz-box-sizing:border-box; }
 .anim { position:absolute; top:200px; font-size:50px; text-decoration:none; color:white; font-weight:bold; outline:none; }
 .frame { float:left; width:100px; height:500px; position:relative;
     &.frameLeft { @include background-image(linear-gradient(left,yellow , green,red ));

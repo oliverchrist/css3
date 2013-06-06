@@ -1,0 +1,5 @@
+{
+    "subnavi": [
+        { "label":"$_SERVER" ,"href":"server.php", "target":"_self" }
+    ]    
+}

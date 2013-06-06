@@ -1,5 +1,5 @@
 <?php
-$basePath = '../../';
+$basePath = $_SERVER['DOCUMENT_ROOT'];
 ?>
 <!DOCTYPE html>
 <html>

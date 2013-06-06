@@ -73,51 +73,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-position: 0 0;
 }
 
+/*
 @-webkit-keyframes bganim1 {
-  /* line 8, ../sass/screen.scss */
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-
-  /* line 9, ../sass/screen.scss */
-  100% {
-    -webkit-transform: translate(10px, 20px);
-    transform: translate(10px, 20px);
-  }
+  0%   { -webkit-transform:translate(0, 0); transform:translate(0, 0); }
+  100% { -webkit-transform:translate(10px, 20px); transform:translate(10px, 20px); }
 }
-
 @-webkit-keyframes bganim2 {
-  /* line 12, ../sass/screen.scss */
-  0% {
-    -webkit-transform: translate(0, 0);
-  }
-
-  /* line 13, ../sass/screen.scss */
-  100% {
-    -webkit-transform: translate(-10px, -20px);
-  }
+  0%   { -webkit-transform:translate(0, 0); }
+  100% { -webkit-transform:translate(-10px, -20px); }
 }
-
 @-webkit-keyframes bganim3 {
-  /* line 16, ../sass/screen.scss */
-  0% {
-    -webkit-transform: translate(0, 0);
-  }
-
-  /* line 17, ../sass/screen.scss */
-  100% {
-    -webkit-transform: translate(-10px, 20px);
-  }
+  0%   { -webkit-transform:translate(0, 0); }
+  100% { -webkit-transform:translate(-10px, 20px); }
 }
 
-/* line 43, ../sass/screen.scss */
+@mixin shake($anim) {
+    -webkit-animation-name: $anim;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    animation-name: $anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+*/
+/* line 44, ../sass/screen.scss */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 body {
   font-family: Arial;
   font-size: 16px;
@@ -129,39 +119,62 @@ body {
   background-image: linear-gradient(left, #ffffff, #000000 50%, #ffffff);
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 h1 {
   font-size: 20px;
   line-height: 25px;
-  margin: 10px 0 20px;
+  margin: 10px 0 40px;
+  font-weight: bold;
+  position: relative;
 }
-
-/* line 46, ../sass/screen.scss */
-p {
-  margin: 10px 0;
+/* line 37, ../sass/screen.scss */
+h1:after {
+  content: " ";
+  height: 1px;
+  background: black;
+  -webkit-transform: perspective(0) rotate(-1deg);
+  -moz-transform: perspective(0) rotate(-1deg);
+  -ms-transform: perspective(0) rotate(-1deg);
+  -o-transform: perspective(0) rotate(-1deg);
+  transform: perspective(0) rotate(-1deg);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
 }
 
 /* line 47, ../sass/screen.scss */
+p {
+  margin: 10px 0 20px;
+}
+
+/* line 48, ../sass/screen.scss */
 a {
   outline: none;
   color: black;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
+.floatLeft {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 50, ../sass/screen.scss */
 .clear {
   clear: both;
   height: 0;
   line-height: 0;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .website {
   width: 1000px;
-  margin: 40px auto 0;
+  margin: 40px auto;
   background: white;
   position: relative;
 }
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .website:before {
   content: " ";
   position: absolute;
@@ -176,7 +189,7 @@ a {
   -o-transform: skew(0, -1deg);
   transform: skew(0, -1deg);
 }
-/* line 51, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .website:after {
   content: " ";
   position: absolute;
@@ -191,18 +204,18 @@ a {
   -o-transform: skew(0, -1deg);
   transform: skew(0, -1deg);
 }
-/* line 52, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .website header {
   padding: 20px;
   position: relative;
 }
-/* line 53, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .website header .global-logo {
   display: inline-block;
   width: 348px;
   height: 96px;
 }
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .website header:after {
   content: " ";
   height: 1px;
@@ -217,52 +230,45 @@ a {
   bottom: 10px;
   width: 100%;
 }
-/* line 55, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .website header .mainnavi {
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
-/* line 56, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .website header .mainnavi a {
   display: inline-block;
   padding: 7px 10px;
   font-size: 20px;
   text-decoration: none;
-  font-weight: bold;
   position: relative;
 }
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .website header .mainnavi a:hover {
   text-decoration: underline;
 }
-/* line 62, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
+.website header .mainnavi a.current {
+  background: #d52c1f;
+  color: white;
+}
+/* line 65, ../sass/screen.scss */
 .website #main .subnavi {
   float: left;
   width: 20%;
 }
-/* line 63, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .website #main .subnavi a {
   display: block;
   padding: 7px 10px;
-  font-size: 20px;
+  font-size: 15px;
+  line-height: 20px;
   text-decoration: none;
-  font-weight: bold;
-}
-/* line 65, ../sass/screen.scss */
-.website #main .subnavi a:first-child {
-  border-top: none;
-}
-/* line 66, ../sass/screen.scss */
-.website #main .subnavi a:hover {
-  text-decoration: underline;
-}
-/* line 67, ../sass/screen.scss */
-.website #main .subnavi a + a {
   position: relative;
 }
-/* line 40, ../sass/screen.scss */
-.website #main .subnavi a + a:before {
+/* line 41, ../sass/screen.scss */
+.website #main .subnavi a:before {
   content: " ";
   height: 1px;
   background: #d52c1f;
@@ -276,24 +282,48 @@ a {
   top: 0;
   width: 100%;
 }
-/* line 72, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
+.website #main .subnavi a:first-child {
+  border-top: none;
+}
+/* line 68, ../sass/screen.scss */
+.website #main .subnavi a:hover {
+  text-decoration: underline;
+}
+/* line 69, ../sass/screen.scss */
+.website #main .subnavi a.current {
+  color: #d52c1f;
+}
+/* line 73, ../sass/screen.scss */
+.website #main .subnavi > a:first-child::before {
+  display: none;
+}
+/* line 77, ../sass/screen.scss */
+.website #main .subnavi > div > a {
+  padding-left: 20px;
+}
+/* line 81, ../sass/screen.scss */
+.website #main .subnavi > div div > a {
+  padding-left: 40px;
+}
+/* line 87, ../sass/screen.scss */
 .website #main .content {
   float: left;
   width: 60%;
   padding: 20px 0 40px 20px;
 }
-/* line 73, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .website #main > aside {
   float: left;
   width: 20%;
   min-height: 500px;
 }
-/* line 75, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .website footer {
   padding: 20px 17px;
   position: relative;
 }
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .website footer:before {
   content: " ";
   height: 1px;
