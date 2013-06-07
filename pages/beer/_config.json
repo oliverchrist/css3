@@ -1,7 +1,11 @@
 {
     "subnavi": [
         { "label":"Augustiner Bräu" ,"href":"augustinerbraeu.php", "target":"_self" },
+        { "label":"Braufactum" ,"href":"braufactum.php", "target":"_self" },
+        { "label":"Breznak Schwarzbier" ,"href":"breznakSchwarzbier.php", "target":"_self" },
         { "label":"Büble" ,"href":"bueble.php", "target":"_self" },
-        { "label":"Lammsbräu" ,"href":"lammsbraeu.php", "target":"_self" }
+        { "label":"Lammsbräu" ,"href":"lammsbraeu.php", "target":"_self" },
+        { "label":"Schinner Braunbier" ,"href":"schinnerBraunbier.php", "target":"_self" },
+        { "label":"Schlenkerla" ,"href":"schlenkerla.php", "target":"_self" }
     ]    
 }

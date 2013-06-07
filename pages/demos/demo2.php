@@ -1,5 +1,6 @@
 <?php
 $basePath = $_SERVER['DOCUMENT_ROOT'];
+if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
 ?>
 <!DOCTYPE html>
 <html>

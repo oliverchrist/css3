@@ -29,7 +29,11 @@ class Subnavi {
     
     public function writeNavi(){
         echo '<nav class="subnavi">';
-        $this->generateSubnavi(2, 'pages/' . $this->uri_parts[2] . '/');
+        if(count($this->uri_parts) >= 4){
+            $this->generateSubnavi(2, 'pages/' . $this->uri_parts[2] . '/');
+        }else{
+            echo '&nbsp;';
+        }
         echo '</nav>';
     }
 }

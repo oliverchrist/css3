@@ -1,5 +1,6 @@
 <?php
 $basePath = $_SERVER['DOCUMENT_ROOT'];
+if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +13,7 @@ $basePath = $_SERVER['DOCUMENT_ROOT'];
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Bier Rezesionen</h1>
+                    <h1>Bier Rezensionen</h1>
                     <p>Hier stelle ich meine bereits verkosteten Biere vor</p>
                 </section>
                 <aside class="teaser"></aside>

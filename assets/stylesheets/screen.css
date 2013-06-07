@@ -132,11 +132,11 @@ h1:after {
   content: " ";
   height: 1px;
   background: black;
-  -webkit-transform: perspective(0) rotate(-1deg);
-  -moz-transform: perspective(0) rotate(-1deg);
-  -ms-transform: perspective(0) rotate(-1deg);
-  -o-transform: perspective(0) rotate(-1deg);
-  transform: perspective(0) rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -220,11 +220,11 @@ a {
   content: " ";
   height: 1px;
   background: black;
-  -webkit-transform: perspective(0) rotate(-1deg);
-  -moz-transform: perspective(0) rotate(-1deg);
-  -ms-transform: perspective(0) rotate(-1deg);
-  -o-transform: perspective(0) rotate(-1deg);
-  transform: perspective(0) rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
   position: absolute;
   left: 0;
   bottom: 10px;
@@ -272,11 +272,11 @@ a {
   content: " ";
   height: 1px;
   background: #d52c1f;
-  -webkit-transform: perspective(0) rotate(-1deg);
-  -moz-transform: perspective(0) rotate(-1deg);
-  -ms-transform: perspective(0) rotate(-1deg);
-  -o-transform: perspective(0) rotate(-1deg);
-  transform: perspective(0) rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
   position: absolute;
   left: 0;
   top: 0;
@@ -328,13 +328,35 @@ a {
   content: " ";
   height: 1px;
   background: black;
-  -webkit-transform: perspective(0) rotate(-1deg);
-  -moz-transform: perspective(0) rotate(-1deg);
-  -ms-transform: perspective(0) rotate(-1deg);
-  -o-transform: perspective(0) rotate(-1deg);
-  transform: perspective(0) rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
+}
+
+/* line 93, ../sass/screen.scss */
+.christboxLayer {
+  background: black;
+  text-align: center;
+  position: relative;
+}
+/* line 94, ../sass/screen.scss */
+.christboxLayer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 95, ../sass/screen.scss */
+.christboxLayer .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 100px;
+  line-height: 100px;
+  color: white;
+  cursor: pointer;
 }

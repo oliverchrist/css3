@@ -7,7 +7,7 @@ echo '<nav class="mainnavi">';
         $mainnavi_parts = explode('/', $value->href);
         #echo $mainnavi_parts[2];
         echo "<a href=\"$value->href\" target=\"$value->target\"";
-        if($uri_parts[2] == $mainnavi_parts[2]){
+        if(count($uri_parts) > 2 && $uri_parts[2] == $mainnavi_parts[2]){
             echo ' class="current"';
         }
         echo ">$value->label</a>";
