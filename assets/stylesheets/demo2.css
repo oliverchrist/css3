@@ -3,13 +3,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 8, ../sass/demo2.scss */
-.content {
-  font-family: Arial;
-  color: white;
-  font-size: 25px;
-}
-
-/* line 10, ../sass/demo2.scss */
 .stageFrame {
   margin: 100px auto 0;
   width: 800px;
@@ -20,8 +13,10 @@
   -o-perspective: 800px;
   perspective: 800px;
   position: relative;
+  color: white;
+  font-size: 25px;
 }
-/* line 11, ../sass/demo2.scss */
+/* line 9, ../sass/demo2.scss */
 .stageFrame .stage {
   width: 800px;
   -webkit-transition: all 1s ease;
@@ -44,7 +39,7 @@
   -o-transform-origin: 400px 0 -400px;
   transform-origin: 400px 0 -400px;
 }
-/* line 15, ../sass/demo2.scss */
+/* line 13, ../sass/demo2.scss */
 .stageFrame .stage .website0 {
   width: 800px;
   height: 600px;
@@ -66,7 +61,7 @@
   background-image: linear-gradient(left top, #ffff00, #008000, #ff0000);
   padding: 20px;
 }
-/* line 17, ../sass/demo2.scss */
+/* line 15, ../sass/demo2.scss */
 .stageFrame .stage .website0.website1 {
   -webkit-transform: rotateY(90deg) translate3d(800px, 0px, 0px);
   -moz-transform: rotateY(90deg) translate3d(800px, 0px, 0px);
@@ -79,13 +74,13 @@
   -o-transform-origin: right 0 0;
   transform-origin: right 0 0;
 }
-/* line 21, ../sass/demo2.scss */
+/* line 19, ../sass/demo2.scss */
 .stageFrame .anim {
   position: absolute;
   left: 10px;
   top: 10px;
 }
-/* line 23, ../sass/demo2.scss */
+/* line 21, ../sass/demo2.scss */
 .stageFrame.open .stage {
   -webkit-transform: rotateY(-90deg);
   -moz-transform: rotateY(-90deg);

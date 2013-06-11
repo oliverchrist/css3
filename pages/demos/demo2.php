@@ -15,8 +15,8 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Ollis css3 Spielwiese</h1>
-                    <p>Hier entsteht meine css3 Spielwiese, ohne Rücksicht auf veraltete Browser</p>
+                    <h1>Umblättern Demo</h1>
+                    <p>Content wird auf die Seiten eines Würfels gelegt, welcher sich dreht wenn man auf "TURN" klickt.</p>
                     <a href="#" class="anim">TURN</a>
                     <div class="stageFrame">
                         <div class="stage">

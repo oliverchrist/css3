@@ -43,10 +43,13 @@
 
 * { box-sizing:border-box; -moz-box-sizing:border-box; }
 body { font-family:Arial; font-size:16px; line-height:20px; @include background-image(linear-gradient(left,white , black 50%, white)); }
-h1 { font-size:20px; line-height:25px; margin:10px 0 40px; font-weight:bold; @include underline(black, -5px); }
-p { margin:10px 0 20px; }
+h1, h2 { font-size:20px; line-height:25px; margin:10px 0 40px; font-weight:bold; @include underline(black, -5px); }
+h2 { font-size:16px; line-height:20px; margin:20px 0 20px; }
+
+p, cite { margin:10px 0 20px; }
 a { outline:none; color:black; }
-.floatLeft { float:left; margin-right:20px; }
+.floatLeft { float:left; padding-right:20px; position:relative; z-index:1; background:white; }
+cite { font-style:italic; display:block; }
 .clear { clear:both; height:0; line-height:0; }
 .website { width:1000px; margin:40px auto; background:white; position:relative;
     &:before { content:" "; position:absolute; left:0; top:-10px; height:20px; width:100%; background:white; @include skew(0, -1deg) }
@@ -84,12 +87,19 @@ a { outline:none; color:black; }
                 }
             }
         }
-        .content { float:left; width:60%; padding:20px 0 40px 20px; }
+        .content { float:left; width:60%; padding:20px 0 40px 20px;
+            ul {
+                li {
+                    &:before { content:"- "; }
+                }
+            }
+        }
         > aside { float:left; width:20%; min-height:500px; }
     }
     footer { padding:20px 17px; @include overline(black); }
 }
 
+.christbox { margin-bottom:20px; }
 .christboxLayer { background:black; text-align:center; position:relative;
     img { max-width:100%; max-height:100%; }
     .close { position:absolute; top:20px; right:20px; font-size:100px; line-height:100px; color:white; cursor:pointer; }

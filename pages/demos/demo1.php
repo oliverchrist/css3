@@ -15,8 +15,8 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Ollis css3 Spielwiese</h1>
-                    <p>Hier entsteht meine css3 Spielwiese, ohne Rücksicht auf veraltete Browser</p>
+                    <h1>Layer Demo</h1>
+                    <p>Hier öffnet sich ein Layer indem er den aufrufenden Content auseinander schiebt. Die Besonderheit hier ist, daß versucht wird einen Effekt zu erzeugen, als hingen alle vier Layer zusammen, so als entfalte man ein Papier. Da es keine richtigen Verbindungspunkte zwischen den Flächen gibt ist der Effekt unter umständen etwas verwirrend.</p>
                     <div class="frame frameLeft">
                         <a href="#" class="anim">OP</a>
                     </div>

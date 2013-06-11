@@ -17,7 +17,15 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                     <a class="floatLeft christbox" href="images/lammsbraeuDinkel.JPG">
                         <img src="images/lammsbraeuDinkelThumb.JPG" alt="Lammsbräu Dinkel" />
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2>Eine fruchtig aromatische Bio-Besonderheit</h2>
+                    <p>Diese Bierspezialität ist für Genießer ein wahres Geschmacksparadies. Obergärig gebraut mit dem Urgetreide entfaltet sein Aroma zarten Bananen-, Nuss- und Vanilleduft. Fruchtig, spritzig und doch vollmundig und weich im Geschmack ist das Dinkel ein echter Hochgenuss. Die natürliche Trübung der goldgelben Farbe und der schneeweiße Schaum runden das Bild harmonisch ab.</p>
+                    <p>Durch seine milden und fruchtigen Noten eignet sich das Dinkel ideal zur süßen oder leicht säuerlichen Nachspeise.</p>
+                    <ul>
+                        <li>Stammwürze 12,5%</li>
+                        <li>Alk.-Gehalt 5,2% vol.</li>
+                        <li>obergärig</li>
+                        <li>0,33l Glas-Mehrwegflasche</li>
+                    </ul>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>

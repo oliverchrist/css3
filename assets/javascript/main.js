@@ -7,7 +7,7 @@ $(function(){
             $(this).css('top', offset);
     });
     $('a.christbox').christbox();
-    
+    $('.mailto.email01').mailto('christ@mediaman.de');
 });
 
 
@@ -39,3 +39,11 @@ $.fn.christbox=function(){
         });
     });
 }
+
+$.fn.mailto=function(email){
+    return this.each(function() {
+        $(this).attr('href', 'mailto:' + email);
+        $(this).text(email);
+    });
+}
+          

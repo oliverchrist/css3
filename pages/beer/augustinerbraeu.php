@@ -13,11 +13,14 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Augustiner Bräu</h1>
+                    <h1>Augustiner Bräu Lagerbier Hell</h1>
                     <a class="floatLeft christbox" href="images/augustinerbraeu.JPG">
                         <img src="images/augustinerbraeuThumb.JPG" alt="Augustiner Bräu" />
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Ein besonders mildes, spritziges, lang gelagertes Bier, erfrischend und bekömmlich zugleich. Einmalig in seinem Geschmack, ein Genuss für jeden Bierkenner.</p>
+                    <p>Zutaten: Wasser,  Gerstenmalz, Hopfen</p>
+                    <p>alc. 5,2% vol.</p>
+                    <p><a href="http://www.augustiner-braeu.de/" target="_blank">http://www.augustiner-braeu.de/</a></p>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>

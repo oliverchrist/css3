@@ -1,3 +1,3 @@
 <footer>
-    Kontakt: <a href="mailto:christ@mediaman.de">christ@mediaman.de</a>
+    Kontakt: <a href="#" class="mailto email01"></a>
 </footer>

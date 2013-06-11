@@ -15,8 +15,8 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Ollis css3 Spielwiese</h1>
-                    <p>Hier entsteht meine css3 Spielwiese, ohne Rücksicht auf veraltete Browser</p>
+                    <h1>Sinuskurve</h1>
+                    <p>Die Sinuskurve besteht auf 500 div Elementen, welche per Javasrcipt animiert werden. Die Demo versucht aus den starren Boxen auszubrechen, zeigt aber auch gleichzeitig die Grenzen eines solchen Unterfangens auf, da die Rechenleistung des Computers hier schnell an ihr Ende kommt.</p>
                     <div id="graph">
                     <?php
                     for ($i=0; $i < 500; $i++) { 

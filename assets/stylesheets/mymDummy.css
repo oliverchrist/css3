@@ -1,0 +1,26 @@
+/* line 13, ../sass/mymDummy.scss */
+body {
+  margin: 0;
+}
+
+/* line 15, ../sass/mymDummy.scss */
+.q3, .q1 {
+  display: none;
+}
+
+/* line 16, ../sass/mymDummy.scss */
+.q3 {
+  display: block;
+}
+
+@media all and (max-width: 320px) {
+  /* line 19, ../sass/mymDummy.scss */
+  .q3 {
+    display: none;
+  }
+
+  /* line 20, ../sass/mymDummy.scss */
+  .q1 {
+    display: block;
+  }
+}

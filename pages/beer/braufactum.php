@@ -13,11 +13,22 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Braufactum Märzen</h1>
+                    <h1>Braufactum Marzus</h1>
                     <a class="floatLeft christbox" href="images/braufactum.JPG">
                         <img src="images/braufactumThumb.JPG" alt="Braufactum Märzen" />
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2>Charaktervolles Märzenbier</h2>
+                    <p>Das Märzen war zu den Zeiten, in denen es noch keinen Eiskeller gab, das zuletzt, nämlich im März eingebraute Bier. Es sollte bis zur neuen Saison, die im Oktober begann, halten. Es wurde daher stärker eingebraut und hatte ausgeprägte Malzaromen.</p>
+                    <h2>Zutaten</h2>
+                    <p>Wasser, Gerstenmalz (Caramelmalz, Pilsener Malz), Hopfen (Herkules)</p>
+                    <h2>Trinktemperatur</h2>
+                    <p>10-12 °C</p>
+                    <h2>Speiseempfehlung</h2>
+                    <p>Eintöpfe: z. B. Grünkohl mit Pinkel oder Kasseler · Geschmortes Geflügel: z. B. Ente mit fruchtiger Sauce oder Coq au Vin · Fleischgerichte: z. B. Braten mit dunkler Sauce</p>
+                    <h2>Besonderheiten</h2>
+                    <p>Für Marzus wurde ein spezielles Maischverfahren angewandt und ein hoher Gehalt an Caramelmalzen verwendet, die für die Bernsteinfarbe und die starken Aromen verantwortlich sind.</p>
+                    <h2>Verkostungsnotiz</h2>
+                    <p>Die Farbe von Caramel, mit starker Schaumbildung. Duftet nach Malz, Kandiszucker und Orangenzesten. Schäumt im Mund angenehm leicht auf. Schmeckt trocken. Aromen von Schwarzbrot ergänzen sich mit Anklängen von gerösteten Maroni und Caramel, hinterlegt von einem ausgewogenen Bitterton. Zeigt eine solide Länge.</p>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>
