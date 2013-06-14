@@ -42,7 +42,7 @@
 }
 
 * { box-sizing:border-box; -moz-box-sizing:border-box; }
-body { font-family:Arial; font-size:16px; line-height:20px; @include background-image(linear-gradient(left,white , black 50%, white)); }
+body { font-family:Arial; font-size:16px; line-height:20px; @include background-image(linear-gradient(0deg,white , black 50%, white)); }
 h1, h2 { font-size:20px; line-height:25px; margin:10px 0 40px; font-weight:bold; @include underline(black, -5px); }
 h2 { font-size:16px; line-height:20px; margin:20px 0 20px; }
 

@@ -17,7 +17,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                     <a class="floatLeft christbox" href="images/tisch.JPG">
                         <img src="images/tischThumb.JPG" alt="Tisch" />
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Das ist mein erstes Grünholz Projekt. Alle Verbindungen sind geschraubt. Alle Löcher sind mit einem Handbohrer vorgebohrt und mit der Hand verschraubt. Das sind 32 Schraubverbindungen. Auch hier ist die Kunst gewesen am Ende einen halbwegs geraden Tisch hinzubekommen. Mit einem Winkeleisen oder der Wasserwaage kommt man hier nicht weit, außer bei der Auflagefläche. Die Äste stammen aus dem Garten meiner Schwiegermutter und die Auflage aus einer Schublade vom Sperrmüll. Der Kuchen ist von der Tante :).</p>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>

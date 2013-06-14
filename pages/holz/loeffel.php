@@ -17,7 +17,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                     <a class="floatLeft christbox" href="images/butterStreicher.JPG">
                         <img src="images/loeffelThumb.JPG" alt="Löffel" />
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>So ein Löffel ist gar nicht so einfach herzustellen. Nach meinem ersten gab es mir arg zu denken, daß man Salatbestecke auf dem Weihnachtsmarkt aus Olivenholz für 10 EUR bekommt. Speziell die Laffe ist sehr schwierig.</p>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>

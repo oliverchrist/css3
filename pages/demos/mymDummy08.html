@@ -2,17 +2,26 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />
         <script type="text/javascript" src="/assets/javascript/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="/assets/javascript/jquery.responsiveiframe.js"></script>
         <script>
           var ri = responsiveIframe();
           ri.allowResponsiveEmbedding();
+          $(function(){
+              $('#inputFake').click(function(e){
+                  e.preventDefault(); 
+                  e.stopPropagation();
+              });
+          });
         </script>
         <link href="/assets/stylesheets/mymDummy.css" media="all" rel="stylesheet" type="text/css" />
         
     </head>
     <body>
-        <a href="mymDummy07.html" class="q3"><img src="images/q3_6 Touch_Passwort_vergessen.png"></a>
-        <a href="mymDummy07.html" class="q1"><img src="images/q1_6 Touch_Passwort_vergessen.png"></a>
+        
+        <a href="mymDummy01.html"><img src="images/q1_8 Touch_Passwort_aendern.png">
+            <input type="password" id="inputFake" />
+        </a>
     </body>
 </html>

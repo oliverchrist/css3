@@ -15,6 +15,8 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Holzwerken</h1>
                     <p>Hier stelle ich mein Hobby Holzwerken vor</p>
+                    <p>Die Grundphilosophie besteht darin möglichst auf motorbetriebenes Werkzeug zu verzichten, sowie auf gekauftes Holz. Auch klaue ich das Holz nicht, sondern nutze Grünholz aus dem Garten oder Holz vom Sperrmüll.</p>
+                    <p>Meine Werkzeuge sind von daher im Wesentlichen ein Beil (von daher das Logo), ein Handbohrer, eine Japansäge, Schnitzmesser, Feilen und Schraubendreher.</p>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>

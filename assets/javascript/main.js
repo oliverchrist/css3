@@ -12,7 +12,7 @@ $(function(){
 
 
 /*
- * AJAX Lightbox Function
+ * Lightbox Function
  */
 $.fn.christbox=function(){
     return this.each(function() {

@@ -1,5 +1,7 @@
 {
     "subnavi": [
-        { "label":"$_SERVER" ,"href":"server.php", "target":"_self" }
+        { "label":"$_SERVER" ,"href":"server.php", "target":"_self" },
+        { "label":"submitReducer" ,"href":"submitReducer.php", "target":"_self" }
+        
     ]    
 }

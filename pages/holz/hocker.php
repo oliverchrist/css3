@@ -17,11 +17,12 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                     <a class="floatLeft christbox" href="images/hockerVorne.JPG">
                         <img src="images/hockerVorneThumb.JPG" alt="Hocker vorne" />
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Bei meiner Schwiegermutter sah ich einen Hocker im Bauernstil. Dieser war nätürlich aus dem Supermarkt, aber er inspirierte mich dazu soetwas selbst zu bauen.</p>
+                    <p>Das Holz holte ich mir aus einer alten abgerissenen Pergola eines Freundes, welche in seinem Garten vergammelt. Das Holz längs durchzusägen war mir mit der Hand die Mühe nicht wert, weshalb ich es mit der Schindelspalthacke in zwei Hälften teilte. Von daher rührt die grobe Oberfläche, welche ich nur mit dem Beil etwas nachbearbeitet habe. Die anderen Seiten des Holzes habe ich grob abgehobelt. Zu dem Zeitpunkt hatte ich noch keine Werkbank wofür ich das Ergebnis gar nicht so schlecht finde. Der Steg in der Mitte ist aus einem entrindeten Ast.</p>
                     <a class="floatLeft christbox" href="images/hockerOben.JPG">
                         <img src="images/hockerObenThumb.JPG" alt="Hocker oben" />
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Hier sieht es so aus als wären die Einzelteile mit Holzdübeln verbunden. Ich muss aber zugeben Schrauben verwendet zu haben, welche nur eine Holzdübel Verblendung bekommen haben.</p>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>
