@@ -15,22 +15,32 @@ $(function(){
  * Lightbox Function
  */
 $.fn.christbox=function(){
+    var christboxNumber = $('.christbox').length;
     return this.each(function() {
         var self = this;
-        // close button event setzen und vorher löschen, falls es schon gesetzt war
-        // schliessen mit Escape Taste
+        console.log(christboxNumber);
         $(document).keydown(function(e) {
             if (e.which == 0 || e.which == 27) {
-                $('.modalBgr, .lightbox').hide();
+                $('.christboxLayer').remove();
+                $('.website').fadeIn();
             }
         });
         $(this).click(function(e){
             e.preventDefault();
-            $('body').append('<div class="christboxLayer"><div class="close">X</div><img src="'+$(self).attr('href')+'"></div>');
+            var additionalHtml = '';
+            if(christboxNumber > 1){
+                additionalHtml += '<div class="browseLeft"></div><div class="browseRight"></div>';
+            }
+            $('body').append('<div class="christboxLayer"><div class="close">X</div>' + additionalHtml + '<img src="'+$(self).attr('href')+'"></div>');
             $('.christboxLayer .close').click(function(){
                 $('.christboxLayer').remove();
                 $('.website').fadeIn();
             });
+            if(christboxNumber > 1){
+                $('.christboxLayer .browseRight').click(function(){
+                    console.log('browseRight');
+                });
+            }
             $('.website').hide();
                      
                        
