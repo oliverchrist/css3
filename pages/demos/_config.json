@@ -7,8 +7,7 @@
         { "label":"CSS3 Demo4" ,"href":"demo4.php", "target":"_self" },
         { "label":"jpg quality" ,"href":"jpgQuality.php", "target":"_self" },
         { "label":"progessive jpg vs baseline jpg" ,"href":"progressiveBaseline.php", "target":"_self" },
-        { "label":"progessive jpg lazyload" ,"href":"progressiveLazyLoad.php", "target":"_self" }
-        
-        
+        { "label":"progessive jpg lazyload" ,"href":"progressiveLazyLoad.php", "target":"_self" },
+        { "label":"Download Speed" ,"href":"getDownloadSpeed.php", "target":"_self" }
     ]    
 }
