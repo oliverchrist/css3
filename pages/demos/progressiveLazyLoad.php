@@ -18,16 +18,16 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content" style="width:80%;">
                     <h1>progessive jpg lazyload</h1>
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive01.jpg" width="390" height="390">
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive02.jpg" width="390" height="390">
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive03.jpg" width="390" height="390">
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive04.jpg" width="390" height="390">
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive05.jpg" width="390" height="390">
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive06.jpg" width="390" height="390">
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive07.jpg" width="390" height="390">
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive08.jpg" width="390" height="390">
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive09.jpg" width="390" height="390">
-                    <img src="/assets/images/global/666.png" data-lazyload="images/loadingExampleProgressive10.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive01.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive02.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive03.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive04.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive05.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive06.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive07.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive08.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive09.jpg" width="390" height="390">
+                    <img src="/assets/images/global/color666.png" data-lazyload="images/loadingExampleProgressive10.jpg" width="390" height="390">
                 </section>
                 <div class="clear"></div>
             </div>

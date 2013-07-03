@@ -15,30 +15,52 @@ $(function(){
  * Lightbox Function
  */
 $.fn.christbox=function(){
-    var christboxNumber = $('.christbox').length;
+    var superSelf = this,
+        christboxNumber = this.length,
+        index = 0,
+        current;
+    
     return this.each(function() {
         var self = this;
-        console.log(christboxNumber);
         $(document).keydown(function(e) {
             if (e.which == 0 || e.which == 27) {
                 $('.christboxLayer').remove();
                 $('.website').fadeIn();
             }
         });
-        $(this).click(function(e){
+        $(this)
+        .attr('data-index', index++)
+        .append('<div class="magnifier"></div>')
+        .click(function(e){
             e.preventDefault();
-            var additionalHtml = '';
+            current = $(this).attr('data-index');
+            var additionalHtml = '',
+                showCurrentImage = function(){
+                    $('.christboxLayer img').attr('src', $(superSelf).eq(current).attr('href'));
+                    if(christboxNumber > 1){
+                        $('.christboxLayer .index').text((parseInt(current, 10) + 1) + '/' + christboxNumber);
+                    }
+                };
             if(christboxNumber > 1){
-                additionalHtml += '<div class="browseLeft"></div><div class="browseRight"></div>';
+                additionalHtml += '<div class="browseLeft"></div><div class="browseRight"></div><div class="index"></div>';
             }
-            $('body').append('<div class="christboxLayer"><div class="close">X</div>' + additionalHtml + '<img src="'+$(self).attr('href')+'"></div>');
+            $('body').append('<div class="christboxLayer"><div class="close">X</div>' + additionalHtml + '<img src="#"></div>');
+            showCurrentImage();
             $('.christboxLayer .close').click(function(){
                 $('.christboxLayer').remove();
                 $('.website').fadeIn();
             });
             if(christboxNumber > 1){
                 $('.christboxLayer .browseRight').click(function(){
+                    current++;
+                    if(current >= christboxNumber) current = 0;
+                    showCurrentImage();
+                });
+                $('.christboxLayer .browseLeft').click(function(){
                     console.log('browseRight');
+                    current--;
+                    if(current < 0) current = christboxNumber - 1;
+                    showCurrentImage();
                 });
             }
             $('.website').hide();

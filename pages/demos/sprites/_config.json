@@ -1,0 +1,8 @@
+{
+    "subnavi": [
+        { "label":"Sprite Demo 1" ,"href":"sprites1.php", "target":"_self" }, 
+        { "label":"Sprite Demo 2" ,"href":"sprites2.php", "target":"_self" },
+        { "label":"Sprite Demo 3" ,"href":"sprites3.php", "target":"_self" }, 
+        { "label":"Sprite Demo 4" ,"href":"sprites4.php", "target":"_self" }
+    ]    
+}

@@ -63,9 +63,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 58, global/*.png */
-.global-sprite, .global-logo-light, .global-logo, .global-logoOrig {
-  background: url('/assets/images/global-s58862f3209.png') no-repeat;
+/* line 66, global/*.png */
+.global-sprite, .global-color666, .global-logo-light, .global-logo, .global-logoOrig {
+  background: url('/assets/images/global-s723da52928.png') no-repeat;
+}
+
+/* line 60, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.global-color666 {
+  background-position: 0 -208px;
 }
 
 /* line 60, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -135,34 +140,38 @@ h2 {
 p, cite {
   margin: 10px 0 20px;
 }
-
 /* line 22, ../sass/screen.scss */
+p.maxwidth, cite.maxwidth {
+  max-width: 500px;
+}
+
+/* line 25, ../sass/screen.scss */
 a {
   outline: none;
   color: black;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 cite {
   font-style: italic;
   display: block;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .clear {
   clear: both;
   height: 0;
   line-height: 0;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 .website {
   width: 1000px;
   margin: 40px auto;
   background: white;
   position: relative;
 }
-/* line 26, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .website:before {
   content: " ";
   position: absolute;
@@ -177,7 +186,7 @@ cite {
   -o-transform: skew(0, -1deg);
   transform: skew(0, -1deg);
 }
-/* line 27, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 .website:after {
   content: " ";
   position: absolute;
@@ -192,12 +201,12 @@ cite {
   -o-transform: skew(0, -1deg);
   transform: skew(0, -1deg);
 }
-/* line 28, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .website header {
   padding: 20px;
   position: relative;
 }
-/* line 29, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 .website header .global-logo-light {
   display: inline-block;
   width: 272px;
@@ -218,13 +227,13 @@ cite {
   bottom: 10px;
   width: 100%;
 }
-/* line 31, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .website header .mainnavi {
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
-/* line 32, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .website header .mainnavi a {
   display: inline-block;
   padding: 7px 10px;
@@ -232,21 +241,21 @@ cite {
   text-decoration: none;
   position: relative;
 }
-/* line 33, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .website header .mainnavi a:hover {
   text-decoration: underline;
 }
-/* line 34, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .website header .mainnavi a.current {
   background: #d52c1f;
   color: white;
 }
-/* line 39, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .website #main .subnavi {
   float: left;
   width: 20%;
 }
-/* line 40, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .website #main .subnavi a {
   display: block;
   padding: 7px 10px;
@@ -270,47 +279,48 @@ cite {
   top: 0;
   width: 100%;
 }
-/* line 41, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .website #main .subnavi a:first-child {
   border-top: none;
 }
-/* line 42, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .website #main .subnavi a:hover {
   text-decoration: underline;
 }
-/* line 43, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .website #main .subnavi a.current {
   color: #d52c1f;
 }
-/* line 47, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .website #main .subnavi > a:first-child::before {
   display: none;
 }
-/* line 51, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .website #main .subnavi > div > a {
   padding-left: 20px;
 }
-/* line 55, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .website #main .subnavi > div div > a {
   padding-left: 40px;
 }
-/* line 61, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .website #main .content {
   float: left;
-  width: 60%;
-  padding: 20px 0 40px 20px;
+  width: 80%;
+  padding: 20px 20px 40px 20px;
 }
-/* line 64, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .website #main .content ul li:before {
   content: "- ";
 }
-/* line 68, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .website #main > aside {
   float: left;
   width: 20%;
   min-height: 500px;
+  display: none;
 }
-/* line 70, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .website footer {
   padding: 20px 17px;
   position: relative;
@@ -331,7 +341,7 @@ cite {
   width: 100%;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .floatLeft {
   float: left;
   padding-right: 20px;
@@ -340,33 +350,51 @@ cite {
   background: white;
   margin-bottom: 20px;
 }
-/* line 74, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .floatLeft .thumbs {
   margin-right: -20px;
 }
-/* line 75, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .floatLeft .thumbs a {
   float: left;
   margin: 20px 20px 0 0;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .christbox {
   margin-bottom: 20px;
+  position: relative;
+}
+/* line 82, ../sass/screen.scss */
+.christbox .magnifier {
+  background: url(../images/magnifier.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  width: 32px;
+  height: 32px;
+}
+/* line 83, ../sass/screen.scss */
+.christbox:hover .magnifier {
+  width: 100%;
+  height: 100%;
+  right: 20px;
+  bottom: 0;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .christboxLayer {
   background: black;
   text-align: center;
   position: relative;
 }
-/* line 80, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .christboxLayer img {
   max-width: 100%;
   max-height: 100%;
 }
-/* line 81, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .christboxLayer .close {
   position: absolute;
   top: 20px;
@@ -377,7 +405,7 @@ cite {
   cursor: pointer;
   z-index: 1;
 }
-/* line 82, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .christboxLayer .browseLeft, .christboxLayer .browseRight {
   position: absolute;
   top: 0;
@@ -388,29 +416,38 @@ cite {
   color: white;
   cursor: pointer;
 }
-/* line 83, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .christboxLayer .browseLeft:before, .christboxLayer .browseRight:before {
   position: absolute;
   top: 50%;
   margin-top: -50px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .christboxLayer .browseLeft {
   left: 0;
 }
-/* line 86, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .christboxLayer .browseLeft:before {
   content: "<";
   left: 5%;
 }
-/* line 88, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .christboxLayer .browseRight {
   right: 0;
 }
-/* line 89, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .christboxLayer .browseRight:before {
   content: ">";
   right: 5%;
+}
+/* line 97, ../sass/screen.scss */
+.christboxLayer .index {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 100px;
+  line-height: 100px;
+  color: white;
 }
 
 /*
