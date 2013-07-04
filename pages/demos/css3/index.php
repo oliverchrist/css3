@@ -6,9 +6,6 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
 <html>
     <head>
         <?php include $basePath . 'components/global/head.php'; ?>
-        <style>
-            td { line-height:0; padding:0!important; border:none!important; }
-        </style>
     </head>
     <body>
         <div class="website">
@@ -16,13 +13,8 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Dieses Bild besteht aus einem einzigen Bild</h1>
-                    <p>7 requests  ❘  1.3 MB transferred  ❘  111 ms (onload: 134 ms, DOMContentLoaded: 81 ms)</p>
-                    <table>
-                        <tr>
-                            <td><img src="images/lufiShuffled.png" /></td>
-                        </tr>
-                    </table>
+                    <h1>HTML und CSS Demos</h1>
+                    <p>Das ist meine Spielwiese für Experimente</p>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>

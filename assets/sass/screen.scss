@@ -4,46 +4,70 @@
 @import "global/*.png";
 @include all-global-sprites;
 
-@mixin underline($color, $offset) {
-    position:relative;
-    &:after { content:" "; height:1px; background:$color; @include rotate(-1deg); position:absolute; left:0; bottom:$offset; width:100%; }
-}
-@mixin overline($color, $offset:0) {
-    position:relative;
-    &:before { content:" "; height:1px; background:$color; @include rotate(-1deg); position:absolute; left:0; top:$offset; width:100%; }
-}
+@import "webfonts";
+@import "susy";
+
+$blue: #8aaec2;
+$darkblue: #3b718d;
+$grey: #444;
+
+// breakpoints
+$media-7: 1500px 12;
+$media-6: 12 1499px;
+$media-5: 12 1199px no-mediaqueries;
+$media-5-up: 1200px 12;
+$media-4: 12 949px;
+$media-4-up: 950px 12 no-mediaqueries;
+$media-3: 12 789px;
+$media-3-up:790px 12;
+$media-2: 6 699px;
+$media-1: 6 499px;
 
 * { box-sizing:border-box; -moz-box-sizing:border-box; }
-body { font-family:Arial; font-size:16px; line-height:20px; @include background-image(linear-gradient(0deg,white , black 50%, white)); }
-h1, h2 { font-size:20px; line-height:25px; margin:10px 0 40px; font-weight:bold; @include underline(black, -5px); }
+body { font-family:"Neue Helvetica", Arial; font-size:13px; line-height:16px; color:$grey; }
+h1, h2 { font-family:"Neue Helvetica Bold"; font-size:20px; line-height:25px; margin:10px 0 40px; }
 h2 { font-size:16px; line-height:20px; margin:20px 0 20px; }
 
 p, cite { margin:10px 0 20px;
     &.maxwidth { max-width:500px; }
 }
+img { max-width:100%; }
+table {
+    td, th { padding:2px 5px; border:1px solid black; }
+}
 
 a { outline:none; color:black; }
 cite { font-style:italic; display:block; }
 .clear { clear:both; height:0; line-height:0; }
-.website { width:1000px; margin:40px auto; background:white; position:relative;
-    &:before { content:" "; position:absolute; left:0; top:-10px; height:20px; width:100%; background:white; @include skew(0, -1deg) }
-    &:after { content:" "; position:absolute; left:0; bottom:-10px; height:20px; width:100%; background:white; @include skew(0, -1deg) }
-    header { padding:20px;
-        .global-logo-light { display:inline-block; width:272px; height:16px; }
-        @include underline(black, 10px);
-        .mainnavi { position:absolute; right:20px; bottom:20px;
-            a { display:inline-block; padding:7px 10px; font-size:20px; text-decoration:none; position:relative;
-                &:hover { text-decoration:underline; }
-                &.current { background:#d52c1f; color:white; }
+.website { max-width:1000px; margin:0 auto; background:white; position:relative;
+    header { padding: 27px 0 0 0; position:relative;
+        .global-logo-light { display:inline-block; width:272px; height:16px; margin-left:10px; }
+        .mainnavi { position:absolute; right:20px; top:25px;
+            @include at-breakpoint($media-1){ position:static; padding:10px 10px 0; }
+            a { display:inline-block; padding:0 0 0 16px; font-family:"Neue Helvetica Bold"; font-size:14px; line-height:18px; color:$blue; text-decoration:none; position:relative;
+                &:first-child { padding:0; }
+                &:hover { color:$darkblue; }
+                &.current { color:$grey; }
+            }
+        }
+        #toggleOffCanvas { display:none;
+            @include at-breakpoint($media-1){
+                display:block;
+                width:40px; height:34px; cursor:pointer;
+                background:url(../images/global/nav_btn.png) no-repeat center;
             }
         }
     }
-    #main {
-        .subnavi { float:left; width:20%;
-            a { display:block; padding:7px 10px; font-size:15px; line-height:20px; text-decoration:none; @include overline(#d52c1f, 0);
-                &:first-child { border-top:none; }
+    #main { position:relative;
+        .subnavi { float:left; width:20%; margin-top:36px; @include transition(width 1s ease); background:white;
+            @include at-breakpoint($media-1){
+                width:0; overflow:hidden;
+            }
+            a { display:block; padding:7px 10px; font-size:14px; line-height:18px; text-decoration:none;
+                &:first-child { }
                 &:hover { text-decoration:underline; }
                 &.current { color:#d52c1f; }
+                border-top:1px solid $grey;
             }
             > a {
                 &:first-child {
@@ -61,7 +85,10 @@ cite { font-style:italic; display:block; }
                 }
             }
         }
-        .content { float:left; width:80%; padding:20px 20px 40px 20px;
+        .content { float:left; width:80%; padding:20px 20px 40px 20px; @include transition(width 1s ease);
+            @include at-breakpoint($media-1){
+                width:100%;
+            }
             ul {
                 li {
                     &:before { content:"- "; }
@@ -69,11 +96,17 @@ cite { font-style:italic; display:block; }
             }
         }
         > aside { float:left; width:20%; min-height:500px; display:none; }
+        &.offCanvas {
+            .subnavi { width:100%; position:absolute; left:0; top:0; z-index:1; margin-top:0; }
+        } 
+
     }
-    footer { padding:20px 17px; @include overline(black); }
+    footer { background:$grey; padding:10px 13px; color:white;
+        a { color:white; }
+    }
 }
 
-.floatLeft { float:left; padding-right:20px; position:relative; z-index:1; background:white; margin-bottom:20px;
+.floatLeft { float:left; margin-right:20px; background:white; margin-bottom:20px;
     .thumbs { margin-right:-20px;
         a { float:left; margin:20px 20px 0 0; }
     }
@@ -125,3 +158,4 @@ cite { font-style:italic; display:block; }
     animation-timing-function: ease-in-out;
 }
 */
+

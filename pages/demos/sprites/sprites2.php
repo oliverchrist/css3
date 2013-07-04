@@ -7,7 +7,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
     <head>
         <?php include $basePath . 'components/global/head.php'; ?>
         <style>
-            td { line-height:0; }
+            td { line-height:0; padding:0!important; border:none!important; }
         </style>
     </head>
     <body>

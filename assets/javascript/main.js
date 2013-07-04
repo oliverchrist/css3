@@ -1,13 +1,10 @@
 $(function(){
-    // Treppenfunktion für die Hauptnavigation. Die rechte Kannte eines Menüeintrags richtet sich an der Schrägen darunter aus.
-    $('.mainnavi a').each(function(){
-        var rightEdge = $(this).parent().width() - ( $(this).position().left + $(this).outerWidth() ),
-            factor = 18 / 1000;
-            offset = Math.round(rightEdge * factor);
-            $(this).css('top', offset);
-    });
     $('a.christbox').christbox();
     $('.mailto.email01').mailto('christ@mediaman.de');
+    
+    $('#toggleOffCanvas').click(function(){
+        $('#main').toggleClass('offCanvas');
+    });
 });
 
 
