@@ -201,7 +201,7 @@ cite {
   right: 20px;
   top: 25px;
 }
-@media all and (max-width: 499px) {
+@media all and (max-width: 1199px) {
   /* line 45, ../sass/screen.scss */
   .website header .mainnavi {
     position: static;
@@ -235,7 +235,7 @@ cite {
 .website header #toggleOffCanvas {
   display: none;
 }
-@media all and (max-width: 499px) {
+@media all and (max-width: 1199px) {
   /* line 53, ../sass/screen.scss */
   .website header #toggleOffCanvas {
     display: block;
@@ -260,7 +260,7 @@ cite {
   transition: width 1s ease;
   background: white;
 }
-@media all and (max-width: 499px) {
+@media all and (max-width: 1199px) {
   /* line 62, ../sass/screen.scss */
   .website #main .subnavi {
     width: 0;
@@ -306,7 +306,7 @@ cite {
   -o-transition: width 1s ease;
   transition: width 1s ease;
 }
-@media all and (max-width: 499px) {
+@media all and (max-width: 1199px) {
   /* line 88, ../sass/screen.scss */
   .website #main .content {
     width: 100%;

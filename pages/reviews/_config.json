@@ -1,0 +1,5 @@
+{
+    "subnavi": [
+        { "label":"Bier" ,"href":"beer/", "target":"_self", "isSubfolder":true }
+    ]    
+}
