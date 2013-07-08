@@ -370,17 +370,17 @@ cite {
   background: url(../images/magnifier.svg) center no-repeat;
   background-size: contain;
   position: absolute;
-  right: 40px;
+  right: 20px;
   bottom: 20px;
   width: 32px;
   height: 32px;
 }
 /* line 116, ../sass/screen.scss */
 .christbox:hover .magnifier {
-  width: 100%;
-  height: 100%;
-  right: 20px;
-  bottom: 0;
+  width: 52px;
+  height: 52px;
+  right: 10px;
+  bottom: 10px;
 }
 
 /* line 118, ../sass/screen.scss */

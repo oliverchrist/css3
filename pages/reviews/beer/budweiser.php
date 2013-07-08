@@ -13,7 +13,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Aecht Schlenkerla Rauchbier</h1>
+                    <h1>Budweiser</h1>
                     <a class="floatLeft christbox" href="images/budweiser.JPG">
                         <img src="images/budweiserThumb.JPG" alt="Budweiser" />
                     </a>
