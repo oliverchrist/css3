@@ -1,0 +1,100 @@
+/* line 1, ../sass/form.scss */
+.inputField {
+  position: relative;
+}
+
+/* line 3, ../sass/form.scss */
+input.styled {
+  position: absolute;
+  left: -10000px;
+}
+
+/* line 4, ../sass/form.scss */
+select.styled {
+  position: relative;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 5;
+}
+
+/* line 5, ../sass/form.scss */
+.disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 7, ../sass/form.scss */
+input[type="text"], textarea {
+  border: 5px solid green;
+  padding: 7px 10px;
+  font-size: 20px;
+  width: 100%;
+}
+
+/* line 13, ../sass/form.scss */
+textarea {
+  height: 150px;
+}
+
+/* line 16, ../sass/form.scss */
+.checkbox, .radio {
+  width: 40px;
+  height: 40px;
+  background: url(../../pages/demos/images/checkbox2.png) no-repeat;
+  display: block;
+  clear: left;
+  float: left;
+  margin-bottom: 10px;
+}
+/* line 24, ../sass/form.scss */
+input:focus + .checkbox, input:focus + .radio {
+  background-position: 0 -80px;
+}
+/* line 25, ../sass/form.scss */
+.checkbox.checked, .radio.checked {
+  background-position: 0 -40px;
+}
+/* line 26, ../sass/form.scss */
+input:focus + .checkbox.checked, input:focus + .radio.checked {
+  background-position: 0 -120px;
+}
+
+/* line 30, ../sass/form.scss */
+.radio {
+  background: url(../../pages/demos/images/radio2.png) no-repeat;
+}
+
+/* line 33, ../sass/form.scss */
+.select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* With the padding included, the width is 190 pixels: the actual width of the image. */
+  padding: 7px 10px;
+  font-size: 20px;
+  overflow: hidden;
+  border: 5px solid green;
+}
+/* line 42, ../sass/form.scss */
+select:focus + .select {
+  background: #cfd9d1;
+}
+
+/* line 44, ../sass/form.scss */
+select {
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+}
+/* line 45, ../sass/form.scss */
+select option {
+  font-size: 20px;
+}
+
+/* line 47, ../sass/form.scss */
+label {
+  float: left;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+}
