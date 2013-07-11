@@ -478,3 +478,39 @@ cite {
     animation-timing-function: ease-in-out;
 }
 */
+/* line 2, ../sass/_talkingtime.scss */
+.talkingtime .start {
+  border: #444444 3px solid;
+  padding: 10px;
+  float: left;
+  width: 95%;
+  margin: 0 5% 10px 0;
+}
+/* line 3, ../sass/_talkingtime.scss */
+.talkingtime .newTalker {
+  float: left;
+  width: 100%;
+}
+/* line 4, ../sass/_talkingtime.scss */
+.talkingtime .newTalker input {
+  float: left;
+  border: #8aaec2 3px solid;
+  padding: 10px;
+  margin: 0;
+  width: 80%;
+}
+/* line 5, ../sass/_talkingtime.scss */
+.talkingtime .newTalker div {
+  float: left;
+  border: #8aaec2 3px solid;
+  padding: 10px;
+  margin-left: 5px;
+}
+/* line 7, ../sass/_talkingtime.scss */
+.talkingtime .talker {
+  border: #444444 3px solid;
+  padding: 10px;
+  float: left;
+  width: 45%;
+  margin: 10px 5% 0 0;
+}

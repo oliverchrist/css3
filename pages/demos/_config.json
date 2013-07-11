@@ -8,6 +8,7 @@
         { "label":"Download Speed" ,"href":"getDownloadSpeed.php", "target":"_self" },
         { "label":"Webfonts" ,"href":"webfonts.php", "target":"_self" },
         { "label":"Skinned Form Elements" ,"href":"skinnedFormelements.php", "target":"_self" },
+        { "label":"Redezeit App" ,"href":"redezeit.php", "target":"_self" },
         { "label":"Subfolder" ,"href":"subfolder/", "target":"_self", "isSubfolder":true } 
     ]    
 }

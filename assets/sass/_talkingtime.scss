@@ -1,0 +1,10 @@
+.talkingtime {
+    .start { border:$grey 3px solid; padding:10px; float:left; width:95%; margin:0 5% 10px 0; }
+    .newTalker { float:left; width:100%;
+        input { float:left; border:$blue 3px solid; padding:10px; margin:0; width:80%; }
+        div { float:left; border:$blue 3px solid; padding:10px; margin-left:5px; }
+    }
+    .talker { border:$grey 3px solid; padding:10px; float:left; width:45%; margin:10px 5% 0 0;
+        
+    }
+}
