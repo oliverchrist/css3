@@ -3,6 +3,7 @@ var Talkingtime = function(ws){
         startTime,
         startTalker,
         talkerTime,
+        totalTime = 0,
         interval,
         init = function(){
             el.find('.newTalker input').pressEnter(function(e){
@@ -10,27 +11,42 @@ var Talkingtime = function(ws){
             });
             el.find('.newTalker div').click(function(){
                 var name = $(this).prev().val();
-                $('.talkingtime').append('<div class="talker" data-time="0"><span class="name">' + name + '</span><span class="time"></span></div>');
+                $('.talkingtime').append('<div class="talker" data-time="0"><span class="name">' + name + '</span><span class="time"></span><div class="chart"></div></div>');
                 $(this).prev().val('').focus();
             });
+            
             el.find('.start').click(function(){
-                $('.talkingtime').find('.newTalker').hide();
+                $('.talkingtime').find('.newTalker, .start').hide();
+                $('.talkingtime').find('.stop, .pause').show();
                 startTime = new Date();
                 interval = window.setInterval(showTime, 1000);
+                $('.pause.talker').trigger('click');
             });
+            el.find('.stop').click(function(){
+                window.clearInterval(interval);
+            });
+            
             el.on('click', '.talker', function(){
                 $(this).addClass('active').siblings('.talker').removeClass('active');
-                startTalker = new Date();
+                startTalker = totalTime;
                 talkerTime = parseInt($(this).attr('data-time'), 10);
+                el.find('.stop').after($(this));
             });
         },
         showTime = function(){
             var cur = new Date();
-            var diff = Math.round((Date.parse(cur) - Date.parse(startTime)) / 1000);
-            var talkerDiff = Math.round((Date.parse(cur) - Date.parse(startTalker)) / 1000);
-            el.find('.start').text(diff);
-            el.find('.talker.active .time').text(talkerTime + talkerDiff);
-            el.find('.talker.active').attr('data-time', talkerTime + talkerDiff);
+            totalTime = Math.round((Date.parse(cur) - Date.parse(startTime)) / 1000);
+            var talkerDiff = totalTime - startTalker;
+            el.find('.stop .time').text(totalTime);
+            var activeTalker = el.find('.talker.active');
+            var totalTalkerTime = talkerTime + talkerDiff;
+            activeTalker.find('.time').text(totalTalkerTime + ' s');
+            activeTalker.attr('data-time', totalTalkerTime);
+            el.find('.talker').each(function(){
+                var localTalkerTime = parseInt($(this).attr('data-time'), 10);
+                var percentage = Math.round(localTalkerTime*100/totalTime) + '%';
+                $('.chart', this).css({'width': percentage, 'color': 'rgba(255,0,0,' + localTalkerTime/totalTime + ')'}).text(percentage);
+            });
         }
         
     //////////////////////////

@@ -479,7 +479,7 @@ cite {
 }
 */
 /* line 2, ../sass/_talkingtime.scss */
-.talkingtime .start {
+.talkingtime .start, .talkingtime .stop, .talkingtime .pause {
   border: #444444 3px solid;
   padding: 10px;
   float: left;
@@ -487,11 +487,19 @@ cite {
   margin: 0 5% 10px 0;
 }
 /* line 3, ../sass/_talkingtime.scss */
+.talkingtime .start .time, .talkingtime .stop .time, .talkingtime .pause .time {
+  float: right;
+}
+/* line 5, ../sass/_talkingtime.scss */
+.talkingtime .stop, .talkingtime .pause {
+  display: none;
+}
+/* line 6, ../sass/_talkingtime.scss */
 .talkingtime .newTalker {
   float: left;
   width: 100%;
 }
-/* line 4, ../sass/_talkingtime.scss */
+/* line 7, ../sass/_talkingtime.scss */
 .talkingtime .newTalker input {
   float: left;
   border: #8aaec2 3px solid;
@@ -499,18 +507,35 @@ cite {
   margin: 0;
   width: 80%;
 }
-/* line 5, ../sass/_talkingtime.scss */
+/* line 8, ../sass/_talkingtime.scss */
 .talkingtime .newTalker div {
   float: left;
   border: #8aaec2 3px solid;
   padding: 10px;
   margin-left: 5px;
 }
-/* line 7, ../sass/_talkingtime.scss */
+/* line 10, ../sass/_talkingtime.scss */
 .talkingtime .talker {
   border: #444444 3px solid;
   padding: 10px;
   float: left;
-  width: 45%;
+  width: 95%;
   margin: 10px 5% 0 0;
+  position: relative;
+}
+/* line 11, ../sass/_talkingtime.scss */
+.talkingtime .talker .time {
+  float: right;
+}
+/* line 12, ../sass/_talkingtime.scss */
+.talkingtime .talker .chart {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 36px;
+  background: rgba(255, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
 }
