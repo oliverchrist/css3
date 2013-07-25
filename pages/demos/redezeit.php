@@ -19,7 +19,10 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                         <div class="start">Start</div>
                         <div class="stop">Stop<span class="time"></span></div>
                         <div class="pause talker" data-time="0"><span class="name">Pause</span><span class="time"></span><div class="chart"></div></div>
-                        <div class="newTalker"><input type="text" /><div>Add</div></div>
+                        <div class="newTalker">
+                            <input type="text" /><div>Add</div><br>
+                            <input type="checkbox" id="toTop" value="top"><label for="toTop">move active to top</label>
+                        </div>
                     </div>
                     
                 </section>

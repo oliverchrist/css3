@@ -500,8 +500,7 @@ cite {
   width: 100%;
 }
 /* line 7, ../sass/_talkingtime.scss */
-.talkingtime .newTalker input {
-  float: left;
+.talkingtime .newTalker input[type="text"] {
   border: #8aaec2 3px solid;
   padding: 10px;
   margin: 0;
@@ -509,12 +508,23 @@ cite {
 }
 /* line 8, ../sass/_talkingtime.scss */
 .talkingtime .newTalker div {
-  float: left;
   border: #8aaec2 3px solid;
   padding: 10px;
   margin-left: 5px;
+  display: inline-block;
+}
+/* line 9, ../sass/_talkingtime.scss */
+.talkingtime .newTalker input[type="checkbox"] {
+  clear: left;
+  margin-top: 20px;
+  position: relative;
+  top: 2px;
 }
 /* line 10, ../sass/_talkingtime.scss */
+.talkingtime .newTalker label {
+  margin-left: 10px;
+}
+/* line 12, ../sass/_talkingtime.scss */
 .talkingtime .talker {
   border: #444444 3px solid;
   padding: 10px;
@@ -523,11 +533,11 @@ cite {
   margin: 10px 5% 0 0;
   position: relative;
 }
-/* line 11, ../sass/_talkingtime.scss */
+/* line 13, ../sass/_talkingtime.scss */
 .talkingtime .talker .time {
   float: right;
 }
-/* line 12, ../sass/_talkingtime.scss */
+/* line 14, ../sass/_talkingtime.scss */
 .talkingtime .talker .chart {
   position: absolute;
   left: 0;

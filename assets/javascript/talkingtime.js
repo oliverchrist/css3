@@ -5,13 +5,17 @@ var Talkingtime = function(ws){
         talkerTime,
         totalTime = 0,
         interval,
+        talkerNumber = 0,
+        colors = new Array("#008000","#C0C0C0","#00FF00","#808080","#808000","#FFFFFF","#FFFF00","#800000","#000080","#FF0000","#0000FF","#800080","#008080","#FF00FF","#00FFFF","#ffa500"),
         init = function(){
             el.find('.newTalker input').pressEnter(function(e){
                 $(this).next().trigger('click');
             });
             el.find('.newTalker div').click(function(){
                 var name = $(this).prev().val();
-                $('.talkingtime').append('<div class="talker" data-time="0"><span class="name">' + name + '</span><span class="time"></span><div class="chart"></div></div>');
+                $('.talkingtime').append('<div class="talker" data-time="0" style="background:' + colors[talkerNumber++] + '"><span class="name">' + name + '</span><span class="time"></span><div class="chart"></div></div>');
+                if(talkerNumber >= colors.length) talkerNumber = 0;
+                console.log(talkerNumber.length);
                 $(this).prev().val('').focus();
             });
             
@@ -30,7 +34,9 @@ var Talkingtime = function(ws){
                 $(this).addClass('active').siblings('.talker').removeClass('active');
                 startTalker = totalTime;
                 talkerTime = parseInt($(this).attr('data-time'), 10);
-                el.find('.stop').after($(this));
+                if($('#toTop:checked').get(0)){
+                    el.find('.stop').after($(this));
+                }
             });
         },
         showTime = function(){

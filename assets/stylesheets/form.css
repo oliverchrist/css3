@@ -70,7 +70,6 @@ input:focus + .checkbox.checked, input:focus + .radio.checked {
   top: 0;
   left: 0;
   width: 100%;
-  /* With the padding included, the width is 190 pixels: the actual width of the image. */
   padding: 7px 10px;
   font-size: 20px;
   overflow: hidden;

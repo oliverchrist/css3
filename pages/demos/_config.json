@@ -2,6 +2,7 @@
     "subnavi": [
         { "label":"CSS3 Demos" ,"href":"css3/", "target":"_self", "isSubfolder":true }, 
         { "label":"Sprites" ,"href":"sprites/", "target":"_self", "isSubfolder":true }, 
+        { "label":"email test" ,"href":"emailTest.php", "target":"_self" },
         { "label":"jpg quality" ,"href":"jpgQuality.php", "target":"_self" },
         { "label":"progessive jpg vs baseline jpg" ,"href":"progressiveBaseline.php", "target":"_self" },
         { "label":"progessive jpg lazyload" ,"href":"progressiveLazyLoad.php", "target":"_self" },
