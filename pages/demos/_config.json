@@ -3,6 +3,7 @@
         { "label":"CSS3 Demos" ,"href":"css3/", "target":"_self", "isSubfolder":true }, 
         { "label":"Sprites" ,"href":"sprites/", "target":"_self", "isSubfolder":true }, 
         { "label":"email test" ,"href":"emailTest.php", "target":"_self" },
+        { "label":"youtube test" ,"href":"youtubeTest.php", "target":"_self" },
         { "label":"jpg quality" ,"href":"jpgQuality.php", "target":"_self" },
         { "label":"progessive jpg vs baseline jpg" ,"href":"progressiveBaseline.php", "target":"_self" },
         { "label":"progessive jpg lazyload" ,"href":"progressiveLazyLoad.php", "target":"_self" },
@@ -10,6 +11,7 @@
         { "label":"Webfonts" ,"href":"webfonts.php", "target":"_self" },
         { "label":"Skinned Form Elements" ,"href":"skinnedFormelements.php", "target":"_self" },
         { "label":"Redezeit App" ,"href":"redezeit.php", "target":"_self" },
+        { "label":"Primzahlen" ,"href":"primeNumbers.php", "target":"_self" },
         { "label":"Subfolder" ,"href":"subfolder/", "target":"_self", "isSubfolder":true } 
     ]    
 }

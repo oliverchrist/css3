@@ -38,7 +38,7 @@ class Mail {
         // Create the mail object using the Mail::factory method
         $params["host"] = "mail.mediaman.de";
         $params["auth"] = TRUE;
-        $params["username"] = "christ";
+        $params["username"] = "xxx";
         $params["password"] = "xxx";
         $mail =& \Mail::factory("smtp", $params);
 
