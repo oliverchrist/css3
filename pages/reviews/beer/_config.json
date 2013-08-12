@@ -7,8 +7,10 @@
         { "label":"Büble" ,"href":"bueble.php", "target":"_self" },
         { "label":"Jever" ,"href":"jever.php", "target":"_self" },
         { "label":"Lammsbräu" ,"href":"lammsbraeu.php", "target":"_self" },
+        { "label":"Oettinger" ,"href":"oettinger.php", "target":"_self" },
         { "label":"Schinner Braunbier" ,"href":"schinnerBraunbier.php", "target":"_self" },
         { "label":"Schlenkerla" ,"href":"schlenkerla.php", "target":"_self" },
+        { "label":"Sternla" ,"href":"sternla.php", "target":"_self" },
         { "label":"Tegernsee" ,"href":"tegernsee.php", "target":"_self" }
     ]    
 }
