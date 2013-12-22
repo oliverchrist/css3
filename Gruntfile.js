@@ -1,14 +1,14 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         imagemin: { // Task
-            dynamic: { // Another target
-                files: [{
-                    expand: true, // Enable dynamic expansion
-                    cwd: 'pages/reviews/beer/images/', // Src matches are relative to this path
-                    src: ['*.{png,jpg,gif}'], // Actual patterns to match
-                    dest: 'pages/reviews/beer/images/resize' // Destination path prefix
-                }]
-            }
+            static: { // Target
+                options: { // Target options
+                    optimizationLevel: 3
+                },
+                files: { // Dictionary of files
+                    'pages/reviews/beer/images/altes.JPG': 'pages/reviews/beer/images/altes2.JPG', // 'destination': 'source'
+                }
+            },
         }
     });
 
