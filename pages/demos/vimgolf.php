@@ -15,12 +15,8 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
                     <h1>Vimgolf Rank</h1>
-                    <div id="challenges">
-                        <?php
-                        $homepage = file_get_contents('http://www.vimgolf.com/');
-                        echo $homepage;
-                        ?>
-                    </div>
+                    <div id="challengesTable"></div>
+                    <div id="challenges"></div>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>
