@@ -15,7 +15,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Original Sternla – extra mildes Helles</h1>
                     <a class="floatLeft christbox" href="images/sternla.JPG">
-                        <img src="images/sternlaThumb.JPG" alt="Sternla" />
+                        <img src="images/resized/sternla.JPG" alt="Sternla" />
                     </a>
                     <p>Original Sternla schmeckt! Unser Sternla ist hell und schlank. Es begeistert durch seinen milden und dennoch vollmundigen Geschmack. Die feinwürzige Erfrischung zu jeder Jahreszeit. Ein extra mildes Bier bei einer Stammwürze von 11,3% und einem Alkoholgehalt von 4,9%.</p>
                     <div class="clear"></div>

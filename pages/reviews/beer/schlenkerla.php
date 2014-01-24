@@ -15,7 +15,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Aecht Schlenkerla Rauchbier</h1>
                     <a class="floatLeft christbox" href="images/schlenkerla.JPG">
-                        <img src="images/schlenkerlaThumb.JPG" alt="Schlenkerla" />
+                        <img src="images/resized/schlenkerla.JPG" alt="Schlenkerla" />
                     </a>
                     <h2>Das Original unter den Bieren</h2>
                     <p>Bamberg und Rauchbier gehören zusammen, eine Liaison, die nicht ohne Folgen geblieben ist. Ihr Lieblingskind ist das "Schlenkerla": Bambergs ergiebigste, meistbesuchte und traditionsreichste Rauchbierquelle. Sie entspringt im Gewinkel der Altstadt, fast akkurat zu Füßen des Hohen Doms, im alten Haus Dominikanerstraße 6, aus dessen Fachwerk sommers die Geranien leuchten. Wer hier nicht eingekehrt ist und nicht den würzigen, unverwechselbaren Geschmack des "Aecht Schlenkerla Rauchbier" gekostet hat, der darf nicht behaupten, in Bamberg gewesen zu sein. "Schlenkerla" ist längst ein Bamberger Zauberwort geworden, doch wissen viele noch nicht, wie diese urige Vokabel zustande gekommen ist. Pate stand der Volksmund. Er nannte einen früheren Brauer des Hauses wegen seines schlenkernden Gangs, der die Folge eines Unfalles war, einfach "das Schlenkerla" und verlieh diesen Namen auch dem seit Jahrhunderten bestehenden Brauhaus. Obwohl mittlerweile die sechste Schlenkerla-Brauer-Generation am Faß steht, ist es dabei bis heute geblieben.</p>

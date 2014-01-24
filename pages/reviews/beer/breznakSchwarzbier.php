@@ -15,7 +15,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Breznak Schwarzbier</h1>
                     <a class="floatLeft christbox" href="images/breznakSchwarzbier.JPG">
-                        <img src="images/breznakSchwarzbierThumb.JPG" alt="Breznak Schwarzbier" />
+                        <img src="images/resized/breznakSchwarzbier.JPG" alt="Breznak Schwarzbier" />
                     </a>
                     <p>Genießen Sie den milden Geschmack von Brèznàk Schwarzbier und erfreuen Sie sich an dem feinporigen, cremigen Schaum.</p>
                     <p>Wir brauen das Bier in Velkè Brezno aus hochwertigen Malz, Hopfen und Wasser aus eigenem Brunnen in traditioneller böhmischer Braukunst seit 1753. ZUM WOHL!</p>
