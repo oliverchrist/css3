@@ -9,6 +9,7 @@
     "grunt-contrib-imagemin": "~0.4.0",
     "grunt-image-resize": "~0.3.0",
     "grunt-multiresize": "~0.3.0",
-    "grunt-imagemagick": "git://github.com/icagstrout/grunt-imagemagick.git"
+    "grunt-imagemagick": "git://github.com/icagstrout/grunt-imagemagick.git",
+    "grunt-scss-lint": "0.0.9"
   }
 }

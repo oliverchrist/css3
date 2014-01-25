@@ -37,11 +37,21 @@ module.exports = function(grunt) {
             dev: {
                 args: ['pages/reviews/beer/images3/*.JPG', '-crop', '300x610+256+0', 'pages/reviews/beer/images4/*.JPG']
             }
+        },
+        scsslint: {
+            allFiles: [
+                'assets/sass/*.scss',
+            ],
+            options: {
+                config: '.scss-lint.yml',
+                reporterOutput: 'scss-lint-report.xml'
+            },
         }
     });
 
     grunt.loadNpmTasks('grunt-imagemagick');
+    grunt.loadNpmTasks('grunt-scss-lint');
 
-    grunt.registerTask('default', ['imagemagick-resize']);
+    grunt.registerTask('default', ['scsslint']);
     //grunt.registerTask('default', ['imagemagick-convert']);
 };

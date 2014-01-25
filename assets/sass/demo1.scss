@@ -8,32 +8,32 @@
 $transFunc1: cubic-bezier(.00,.99,.99,.99);
 $transFunc2: cubic-bezier(.00,.99,.99,.99);
 
-.anim { position:absolute; top:200px; font-size:50px; text-decoration:none; color:white; font-weight:bold; outline:none; }
-.frame { float:left; width:100px; height:500px; position:relative;
+.anim { position: absolute; top: 200px; font-size: 50px; text-decoration: none; color: white; font-weight: bold; outline: none; }
+.frame { float: left; width: 100px; height: 500px; position: relative;
     &.frameLeft { @include background-image(linear-gradient(left,yellow , green,red ));
-        .anim { right:0; }
+        .anim { right: 0; }
     }
     &.frameRight { @include background-image(linear-gradient(left, red, green, yellow));
-        .anim { left:0; }
+        .anim { left: 0; }
     }
 }
-.stageFrame { float:left; width:0; height:500px; overflow:hidden; position:relative; @include transition(all 1s $transFunc1);
-    .stage { width:300px; height:500px; position:absolute; @include perspective( 800px ); margin:0 auto; left:-150px; @include transition(all 1s $transFunc2);
-        .col { width:150px; height:500px; background:grey; position:absolute; top:0; padding:20px; @include transition(all 1s $transFunc2); color:white; overflow:hidden;
-            .anim { top:400px; }
-            &.col1 { left:0; @include transform( rotateY(90deg) translate3d(150px,0,0) ); @include apply-origin( right 0 0, false );
-                .anim { right:-20px; }
+.stageFrame { float: left; width: 0; height: 500px; overflow: hidden; position: relative; @include transition(all 1s $transFunc1);
+    .stage { width: 300px; height: 500px; position: absolute; @include perspective( 800px ); margin: 0 auto; left: -150px; @include transition(all 1s $transFunc2);
+        .col { width: 150px; height: 500px; background: grey; position: absolute; top: 0; padding: 20px; @include transition(all 1s $transFunc2); color: white; overflow: hidden;
+            .anim { top: 400px; }
+            &.col1 { left: 0; @include transform(rotateY(90deg) translate3d(150px, 0, 0)); @include apply-origin(right 0 0, false);
+                .anim { right: -20px; }
             }
-            &.col2 { left:50%; @include transform( rotateY(-90deg) translate3d(-150px,0,0) ); @include apply-origin( 0 0 0, false );
-                .anim { left:-20px; }
+            &.col2 { left: 50%; @include transform(rotateY(-90deg) translate3d(-150px, 0, 0)); @include apply-origin(0 0 0, false);
+                .anim { left: -20px; }
             }
         }
     }
-    &.open { width:300px;
-        .stage { left:0;
+    &.open { width: 300px;
+        .stage { left: 0;
             .col {
-                &.col1 { @include transform( rotateY(0deg) ); }
-                &.col2 { @include transform( rotateY(0deg) ); }
+                &.col1 { @include transform(rotateY(0)); }
+                &.col2 { @include transform(rotateY(0)); }
             }
         }
         

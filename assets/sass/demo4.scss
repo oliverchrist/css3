@@ -1,4 +1,4 @@
-@import "compass/css3";
+@import 'compass/css3';
 
-#graph { position:relative; margin:20px auto 0; border:5px solid black; width:510px; height:510px; }
-.line { position:absolute; top:0; width:1px; height:500px; @include background-image(linear-gradient(top, green, yellow 50%, red)); }
+#graph { position: relative; margin: 20px auto 0; border: 5px solid black; width: 510px; height: 510px; }
+.line { position: absolute; top: 0; width: 1px; height: 500px; @include background-image(linear-gradient(top, green, yellow 50%, red)); }

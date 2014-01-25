@@ -1,4 +1,4 @@
-@import "susy";
+@import 'susy';
 
 // breakpoints
 $media-7: 1500px 12;
@@ -6,20 +6,20 @@ $media-6: 12 1499px;
 $media-5: 12 1199px no-mediaqueries;
 $media-4: 12 949px;
 $media-3: 12 660px;
-$media-3-up:790px 12;
+$media-3-up: 790px 12;
 $media-2: 6 699px;
 $media-1: 6 320px;
 
-body { margin:0; }
+body { margin: 0; }
 
-.q3, .q1 { display:none; }
-.q3 { display:block; }
+.q3, .q1 { display: none; }
+.q3 { display: block; }
 
-@include at-breakpoint($media-1){
-    .q3 { display:none; }
-    .q1 { display:block; }
+@include at-breakpoint($media-1) {
+    .q3 { display: none; }
+    .q1 { display: block; }
 }
 
-#inputFake { position:absolute; left:12px; top:362px; border:1px solid #d1d1d1; border-radius:1px; height:34px; width:264px; padding:1px 15px;
-    &:focus { border-color:#00adef; outline:none; }
+#inputFake { position: absolute; left: 12px; top: 362px; border: 1px solid #d1d1d1; border-radius: 1px; height: 34px; width: 264px; padding: 1px 15px;
+    &:focus { border-color: #00adef; outline: none; }
 }
