@@ -2,3 +2,4 @@
 node_modules/
 resized/
 *.swp
+scss-lint-report.xml

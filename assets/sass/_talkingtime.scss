@@ -1,16 +1,26 @@
 .talkingtime {
-    .start, .stop, .pause { border:$grey 3px solid; padding:10px; float:left; width:95%; margin:0 5% 10px 0;
-        .time { float:right; }
+    .start, .stop, .pause { border: $grey 3px solid; padding: 10px; float: left; width: 95%; margin: 0 5% 10px 0;
+
+        .time { float: right; }
     }
-    .stop, .pause { display:none; }
-    .newTalker { float:left; width:100%;
-        input[type="text"] { border:$blue 3px solid; padding:10px; margin:0; width:80%; }
-        div { border:$blue 3px solid; padding:10px; margin-left:5px; display:inline-block; }
-        input[type="checkbox"] { clear:left; margin-top:20px; position:relative; top:2px; }
-        label { margin-left:10px; }
+
+    .stop, .pause { display: none; }
+
+    .newTalker { float: left; width: 100%;
+
+        input[type="text"] { border: $blue 3px solid; padding: 10px; margin: 0; width: 80%; }
+
+        div { border: $blue 3px solid; padding: 10px; margin-left: 5px; display: inline-block; }
+
+        input[type="checkbox"] { clear: left; margin-top: 20px; position: relative; top: 2px; }
+
+        label { margin-left: 10px; }
     }
-    .talker { border:$grey 3px solid; padding:10px; float:left; width:95%; margin:10px 5% 0 0; position:relative;
-        .time { float:right; }
-        .chart { position:absolute; left:0; top:0; width:0; height:36px; background:rgba(255, 0, 0, 0.2); overflow:hidden; padding:10px 0; text-align:center; }
+
+    .talker { border: $grey 3px solid; padding: 10px; float: left; width: 95%; margin: 10px 5% 0 0; position: relative;
+
+        .time { float: right; }
+
+        .chart { position: absolute; left: 0; top: 0; width: 0; height: 36px; background: rgba(255, 0, 0, .2); overflow: hidden; padding: 10px 0; text-align: center; }
     }
 }

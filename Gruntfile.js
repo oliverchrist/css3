@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         },
         scsslint: {
             allFiles: [
-                'assets/sass/*.scss',
+                'assets/sass/_talkingtime.scss',
             ],
             options: {
                 config: '.scss-lint.yml',
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-imagemagick');
+    //grunt.loadNpmTasks('grunt-imagemagick');
     grunt.loadNpmTasks('grunt-scss-lint');
 
     grunt.registerTask('default', ['scsslint']);

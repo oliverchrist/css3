@@ -19,13 +19,13 @@ linters:
     enabled: true
 
   DeclaredName:
-    enabled: true
+    enabled: false
 
   DuplicateProperty:
     enabled: true
 
   EmptyLineBetweenBlocks:
-    enabled: false
+    enabled: true
 
   EmptyRule:
     enabled: true
@@ -90,7 +90,7 @@ linters:
     enabled: false
 
   UsageName:
-    enabled: true
+    enabled: false
 
   ZeroUnit:
     enabled: true

@@ -1,7 +1,7 @@
 @import 'compass/reset';
 @import 'compass/css3';
 
-@import 'global/*.png';
+@import 'global/\*.png';
 @include all-global-sprites;
 
 @import 'webfonts';
@@ -24,32 +24,47 @@ $media-2: 6 699px;
 $media-1: 6 1199px;
 
 * { box-sizing: border-box; -moz-box-sizing: border-box; }
+
 body { font-family: "Neue Helvetica", Arial; font-size: 13px; line-height: 16px; color: $grey; }
+
 h1, h2 { font-family: "Neue Helvetica Bold"; font-size: 20px; line-height: 25px; margin: 10px 0 40px; }
+
 h2 { font-size: 16px; line-height: 20px; margin: 20px 0 20px; }
 
 p, cite { margin: 10px 0 20px;
+
     &.maxwidth { max-width: 500px; }
 }
+
 img { max-width: 100%; }
+
 table {
     td, th { padding: 2px 5px; border: 1px solid black; }
 }
 
 a { outline: none; color: black; }
+
 cite { font-style: italic; display: block; }
+
 .clear { clear: both; height: 0; line-height: 0; }
+
 .website { max-width: 1000px; margin: 0 auto; background: white; position: relative;
+
     header { padding: 27px 0 0 0; position: relative;
+
         .global-logo-light { display: inline-block; width: 272px; height: 16px; margin-left: 10px; }
+
         .mainnavi { position: absolute; right: 20px; top: 25px;
+
             @include at-breakpoint($media-1){ position: static; padding: 10px 10px 0; }
+
             a { display: inline-block; padding: 0 0 0 16px; font-family: "Neue Helvetica Bold"; font-size: 14px; line-height: 18px; color: $blue; text-decoration: none; position: relative;
                 &:first-child { padding: 0; }
                 &:hover { color: $darkblue; }
                 &.current { color: $grey; }
             }
         }
+
         #toggleOffCanvas { display: none;
             @include at-breakpoint($media-1) {
                 display: block;
@@ -58,11 +73,14 @@ cite { font-style: italic; display: block; }
             }
         }
     }
+
     #main { position: relative;
+
         .subnavi { float: left; width: 20%; margin-top: 36px; @include transition(width 1s ease); background: white;
             @include at-breakpoint($media-1) {
                 width: 0; overflow: hidden;
             }
+
             a {
                 display: block;
                 padding: 7px 10px;
@@ -73,11 +91,13 @@ cite { font-style: italic; display: block; }
                 &:hover { text-decoration: underline; }
                 &.current { color: #d52c1f; }
             }
+
             > a {
                 &:first-child {
                     &::before { display: none; }
                 }
             }
+
             > div {
                 > a {
                     padding-left: 20px;
@@ -89,6 +109,7 @@ cite { font-style: italic; display: block; }
                 }
             }
         }
+
         .content { float: left; width: 80%; padding: 20px 20px 40px 20px; @include transition(width 1s ease);
             @include at-breakpoint($media-1) {
                 width: 100%;
@@ -99,20 +120,26 @@ cite { font-style: italic; display: block; }
                 }
             }
         }
+        
         > aside { float: left; width: 20%; min-height: 500px; display: none; }
+
         &.offCanvas {
             .subnavi { width: 100%; position: absolute; left: 0; top: 0; z-index: 1; margin-top: 0; }
         } 
 
     }
+
     footer { background: $grey; padding: 10px 13px; color: white;
         a { color: white; }
     }
 }
 
 .floatLeft { float: left; margin-right: 20px; background: white; margin-bottom: 20px;
+
     .thumbs { margin-right: -20px;
+
         a { float: left; margin: 20px 20px 0 0; }
+
     }
 }
 .christbox { margin-bottom: 20px; position: relative;
