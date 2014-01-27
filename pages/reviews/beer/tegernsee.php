@@ -15,7 +15,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Tegernsee</h1>
                     <a class="floatLeft christbox" href="images/tegernsee.JPG">
-                        <img src="images/tegernseeThumb.JPG" alt="Tegernsee" />
+                        <img src="images/resized/tegernsee.JPG" alt="Tegernsee" />
                     </a>
                     <h2>Tegernsee</h2>
                 </section>

@@ -16,7 +16,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                     <h1>OETTINGER</h1>
                     <h2>OETTINGER Pils</h2>
                     <a class="floatLeft christbox" href="images/oettingerPils.JPG">
-                        <img src="images/oettingerPilsThumb.JPG" alt="OETTINGER Pils" />
+                        <img src="images/resized/oettingerPils.JPG" alt="OETTINGER Pils" />
                     </a>
                     <p>ein feinherbes, elegantes Bier mit dem typischen, edlen Hopfenaroma. Im Stammwürzegehalt liegt es bei ca. 11,2 %. Es hat daher den Volumen-Alkoholgehalt von ca. 4,7 %.</p>
                     <p>Erhältlich in der 0,5 Liter-, der 0,33 Liter Vichy-, und der 0,33 Liter Steinie-Flasche sowie in 0,33 Liter- und im Sixpack bzw. in der 0,5 Liter Dose.</p>

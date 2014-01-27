@@ -15,7 +15,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Lammsbräu Dinkel</h1>
                     <a class="floatLeft christbox" href="images/lammsbraeuDinkel.JPG">
-                        <img src="images/lammsbraeuDinkelThumb.JPG" alt="Lammsbräu Dinkel" />
+                        <img src="images/resized/lammsbraeuDinkel.JPG" alt="Lammsbräu Dinkel" />
                     </a>
                     <h2>Eine fruchtig aromatische Bio-Besonderheit</h2>
                     <p>Diese Bierspezialität ist für Genießer ein wahres Geschmacksparadies. Obergärig gebraut mit dem Urgetreide entfaltet sein Aroma zarten Bananen-, Nuss- und Vanilleduft. Fruchtig, spritzig und doch vollmundig und weich im Geschmack ist das Dinkel ein echter Hochgenuss. Die natürliche Trübung der goldgelben Farbe und der schneeweiße Schaum runden das Bild harmonisch ab.</p>

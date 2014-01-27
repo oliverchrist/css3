@@ -15,7 +15,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Augustiner Bräu Lagerbier Hell</h1>
                     <a class="floatLeft christbox" href="images/augustinerbraeu.JPG">
-                        <img src="images/augustinerbraeuThumb.JPG" alt="Augustiner Bräu" />
+                        <img src="images/resized/augustinerbraeu.JPG" alt="Augustiner Bräu" />
                     </a>
                     <p>Ein besonders mildes, spritziges, lang gelagertes Bier, erfrischend und bekömmlich zugleich. Einmalig in seinem Geschmack, ein Genuss für jeden Bierkenner.</p>
                     <p>Zutaten: Wasser,  Gerstenmalz, Hopfen</p>

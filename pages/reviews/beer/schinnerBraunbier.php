@@ -15,7 +15,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Schinner Braunbier</h1>
                     <a class="floatLeft christbox" href="images/schinnerBraunbier.JPG">
-                        <img src="images/schinnerBraunbierThumb.JPG" alt="Schinner Braunbier" />
+                        <img src="images/resized/schinnerBraunbier.JPG" alt="Schinner Braunbier" />
                     </a>
                     <p>Braunbier - eine einzigartige Spezialität aus dem Hause Schinner, feurig dunkel und bernsteinfarben, angenehme Bittere, süffig.</p>
                     <p>alc. 5,4 %vol., MHD: Bügelfl. 9 Mon., Faß 30/50 l 6 Mon.</p>

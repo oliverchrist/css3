@@ -1,47 +1,46 @@
-.inputField { position:relative; }
+.inputField { position: relative; }
 
-input.styled { position:absolute; left:-10000px; }
+input.styled { position: absolute; left: -10000px; }
 select.styled { position: relative; opacity: 0; filter: alpha(opacity=0); z-index: 5; }
-.disabled { opacity: 0.5; filter: alpha(opacity=50); }
+.disabled { opacity: .5; filter: alpha(opacity=50); }
 
 input[type="text"], textarea {
-    border:5px solid green;
-    padding:7px 10px;
-    font-size:20px;
-    width:100%;
+    border: 5px solid green;
+    padding: 7px 10px;
+    font-size: 20px;
+    width: 100%;
 }
-textarea{
-    height:150px;
+textarea {
+    height: 150px;
 }
 .checkbox, .radio {
-	width: 40px;
-	height: 40px;
-	background: url(../../pages/demos/images/checkbox2.png) no-repeat;
-	display: block;
-	clear: left;
-	float: left;
-	margin-bottom:10px;
-	input:focus + & { background-position:0 -80px; }
-	&.checked {
-	    input:focus + & { background-position:0 -120px; }
-	    background-position:0 -40px;
-	}
+    width: 40px;
+    height: 40px;
+    background: url(../../pages/demos/images/checkbox2.png) no-repeat;
+    display: block;
+    clear: left;
+    float: left;
+    margin-bottom: 10px;
+    input:focus + & { background-position: 0 -80px; }
+    &.checked {
+        background-position: 0 -40px;
+        input:focus + & { background-position: 0 -120px; }
+    }
 }
 .radio {
-	background: url(../../pages/demos/images/radio2.png) no-repeat;
+    background: url(../../pages/demos/images/radio2.png) no-repeat;
 }
 .select {
-	position: absolute;
-	top:0;
-	left:0;
-	width: 100%;
-	padding: 7px 10px;
-	font-size:20px;
-	overflow: hidden;
-  border:5px solid green;
-  select:focus + & { background:#cfd9d1; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 20px;
+    overflow: hidden;
+    border: 5px solid green;
 }
-select { height:40px; width:100%; font-size:20px;
-    option { font-size:20px; }
+select { height: 40px; width: 100%; font-size: 20px;
+    option { font-size: 20px; }
 }
-label { float:left; font-size:20px; margin:10px 0 0 10px; }
+label { float: left; font-size: 20px; margin: 10px 0 0 10px; }

@@ -15,7 +15,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Budweiser</h1>
                     <a class="floatLeft christbox" href="images/budweiser.JPG">
-                        <img src="images/budweiserThumb.JPG" alt="Budweiser" />
+                        <img src="images/resized/budweiser.JPG" alt="Budweiser" />
                     </a>
                     <h2>Budweiser</h2>
                     <p>Known as "The King of Beers," Budweiser was first introduced by Adolphus Busch in 1876 and it's still brewed with the same high standards today. Budweiser is a medium-bodied, flavorful, crisp American-style lager. Brewed with the best barley malt and a blend of premium hop varieties, it is an icon of core American values like optimism and celebration.</p>
