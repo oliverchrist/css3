@@ -17,6 +17,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                     <a class="floatLeft christbox" href="images/braufactum.JPG">
                         <img src="images/braufactumThumb.JPG" alt="Braufactum Märzen" />
                     </a>
+                    <div class="clear"></div>
                     <h2>Charaktervolles Märzenbier</h2>
                     <p>Das Märzen war zu den Zeiten, in denen es noch keinen Eiskeller gab, das zuletzt, nämlich im März eingebraute Bier. Es sollte bis zur neuen Saison, die im Oktober begann, halten. Es wurde daher stärker eingebraut und hatte ausgeprägte Malzaromen.</p>
                     <h2>Zutaten</h2>
