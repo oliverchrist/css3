@@ -10,6 +10,8 @@
     "grunt-image-resize": "~0.3.0",
     "grunt-multiresize": "~0.3.0",
     "grunt-imagemagick": "git://github.com/icagstrout/grunt-imagemagick.git",
-    "grunt-scss-lint": "0.0.9"
+    "grunt-scss-lint": "0.0.9",
+    "grunt-contrib-jshint": "0.7.2",
+    "grunt-jscs-checker": "~0.3.2"
   }
 }

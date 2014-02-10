@@ -46,12 +46,32 @@ module.exports = function(grunt) {
                 config: '.scss-lint.yml',
                 reporterOutput: 'scss-lint-report.xml'
             },
+        },
+        jshint: {
+            files: [
+                'assets/javascript/talkingtime.js'
+            ],
+            options: {
+                jshintrc: '.jshintrc',
+            }
+        },
+        jscs: {
+            src: "assets/javascript/talkingtime.js",
+            options: {
+                config: ".jscsrc"
+            }
         }
     });
 
     //grunt.loadNpmTasks('grunt-imagemagick');
     grunt.loadNpmTasks('grunt-scss-lint');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks("grunt-jscs-checker");
 
-    grunt.registerTask('default', ['scsslint']);
+    grunt.registerTask('jscheck', [
+        'jshint',
+        'jscs'
+    ]);
+    grunt.registerTask('default', ['jscheck']);
     //grunt.registerTask('default', ['imagemagick-convert']);
 };
