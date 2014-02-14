@@ -1,3 +1,8 @@
+/* global $:false */
+/* global console:false */
+/* global window:false */
+/* global document:false */
+
 var Talkingtime = function(ws) {
     'use strict';
     var el = ws,
@@ -71,28 +76,28 @@ var Talkingtime = function(ws) {
      * Initialize
      * 
      * @method init
-     */    
+     */
     this.init = function() {
         init();
-    };        
+    };
 };
 
 $(document).ready(function() {
     'use strict';
     var talking = new Talkingtime($('.talkingtime'));
-    talking.init(); 
+    talking.init();
 });
 
-$.fn.pressEnter = function(fn) {  
+$.fn.pressEnter = function(fn) {
     'use strict';
 
-    return this.each(function() {  
+    return this.each(function() {
         $(this).bind('enterPress', fn);
         $(this).keyup(function(e) {
-            if(e.keyCode == 13)
+            if(e.keyCode === 13)
             {
                 $(this).trigger('enterPress');
             }
         });
-    });  
-}; 
+    });
+};

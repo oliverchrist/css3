@@ -66,7 +66,7 @@ module.exports = function(grunt) {
     //grunt.loadNpmTasks('grunt-imagemagick');
     grunt.loadNpmTasks('grunt-scss-lint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks("grunt-jscs-checker");
+    grunt.loadNpmTasks('grunt-jscs-checker');
 
     grunt.registerTask('jscheck', [
         'jshint',
