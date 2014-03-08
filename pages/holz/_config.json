@@ -4,6 +4,8 @@
         { "label":"Butter Streicher" ,"href":"butterStreicher.php", "target":"_self" },
         { "label":"Löffel" ,"href":"loeffel.php", "target":"_self" },
         { "label":"Regal" ,"href":"regal.php", "target":"_self" },
-        { "label":"Tisch" ,"href":"tisch.php", "target":"_self" }
+        { "label":"Tisch" ,"href":"tisch.php", "target":"_self" },
+        { "label":"Tafel Tisch" ,"href":"grosserTisch.php", "target":"_self" },
+        { "label":"Tritt" ,"href":"tritt.php", "target":"_self" }
     ]    
 }
