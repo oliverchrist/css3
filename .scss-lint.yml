@@ -1,25 +1,22 @@
 # Default application configuration that all configurations inherit from.
 linters:
   BorderZero:
-    enabled: true
+    enabled: false
 
   CapitalizationInSelector:
-    enabled: false
+    enabled: true
 
   ColorKeyword:
-    enabled: false
+    enabled: true
 
   Comment:
-    enabled: false
+    enabled: true
 
   DebugStatement:
     enabled: true
 
   DeclarationOrder:
     enabled: true
-
-  DeclaredName:
-    enabled: false
 
   DuplicateProperty:
     enabled: true
@@ -31,7 +28,7 @@ linters:
     enabled: true
 
   HexFormat:
-    enabled: true
+    enabled: false
 
   IdWithExtraneousSelector:
     enabled: true
@@ -43,8 +40,11 @@ linters:
   LeadingZero:
     enabled: true
 
-  PlaceholderInExtend:
+  NameFormat:
     enabled: true
+
+  PlaceholderInExtend:
+    enabled: false
 
   PropertySpelling:
     enabled: true
@@ -55,13 +55,13 @@ linters:
     max_depth: 3
 
   Shorthand:
-    enabled: false
+    enabled: true
 
   SingleLinePerSelector:
-    enabled: false
+    enabled: true
 
   SortedProperties:
-    enabled: false
+    enabled: true
 
   SpaceAfterComma:
     enabled: true
@@ -87,13 +87,7 @@ linters:
     enabled: true
 
   UrlQuotes:
-    enabled: false
-
-  UsageName:
-    enabled: false
+    enabled: true
 
   ZeroUnit:
     enabled: true
-
-  Compass::*:
-    enabled: false
