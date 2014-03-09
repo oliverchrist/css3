@@ -15,8 +15,18 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                 <section class="content">
                     <h1>Holzwerken</h1>
                     <p>Hier stelle ich mein Hobby Holzwerken vor</p>
-                    <p>Die Grundphilosophie besteht darin möglichst auf motorbetriebenes Werkzeug zu verzichten, sowie auf gekauftes Holz. Auch klaue ich das Holz nicht, sondern nutze Grünholz aus dem Garten oder Holz vom Sperrmüll.</p>
-                    <p>Meine Werkzeuge sind von daher im Wesentlichen ein Beil (von daher das Logo), ein Handbohrer, eine Japansäge, Schnitzmesser, Feilen und Schraubendreher.</p>
+                    <p>Die Grund Philosophie besteht darin möglichst auf Motor betriebenes Werkzeug zu
+                    verzichten, sowie auf gekauftes Holz. Auch klaue ich das Holz nicht, sondern nutze
+                    Grünholz aus dem Garten oder Holz vom Sperrmüll.</p>
+                    <p>Meine Werkzeuge waren von daher im
+                    wesentlichen ein Beil, ein Handbohrer, eine Japan Säge, Schnitzmesser,
+                    Feilen und Schraubendreher.</p>
+                    <p>Als Familienvater merkte ich recht bald, daß meine Zeit, welche ich im Workshop
+                    verbringen kann, durchaus begrenzt ist. Die Philosophie kein Motor betriebenes Werkzeug zu
+                    nutzen wurde deshalb überholt. Als wesentliche Werkzeuge nutze ich nun eine Zug Kappsäge,
+                    Akku Bohrschrauber, Stichsäge und Bandschleifer.</p>
+                    <p>Gerne besitzen würde ich noch eine Bandsäge, eine Kreissäge, eine Abrichte, einen
+                    Exzenterschleifer und eine Oberfräse.</p>
                 </section>
                 <aside class="teaser"></aside>
                 <div class="clear"></div>
