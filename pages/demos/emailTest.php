@@ -19,7 +19,7 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
                     <h1>Email Test</h1>
                     <?php
                         $emailBody = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-                        $emailBodyHtml = file_get_contents('/home/christ/git/mym_hlk_prototype/app/emailMessage.html');
+                        $emailBodyHtml = file_get_contents('/home/christ/git/mym_hlk_prototype/.tmp/emailUniversal.html');
                         if(Mail::send('christ@mediaman.de', 'Email Test', $emailBody, $emailBodyHtml, 'christ@mediaman.de')) {
                             echo 'Ihre Email wurde versendet.';
                         }else{
