@@ -13,13 +13,13 @@ if(substr($basePath, -1, 1) != '/') { $basePath .= '/'; }
             <div id="main">
                 <?php include $basePath . 'components/global/subnavi.php'; ?>
                 <section class="content">
-                    <h1>Wildholzzaun</h1>
+                    <h1>Wildholz Zaun</h1>
                     <a class="christbox" href="images/wildholzzaun.JPG">
                         <img src="images/wildholzzaun.JPG" alt="Wildholzzaun" />
                     </a>
                     <p>Unser Garten führt am Haus vorbei auf die Straße. Diesen Weg wollten wir unserer
-                    Tochter erschwehren. Genauso sollten möglichst keine Kinder an den Holzunterstand
-                    gelangen, falls das gesetzte Holz umstürtzen sollte.</p>
+                    Tochter erschweren. Genauso sollten möglichst keine Kinder an den Holzunterstand
+                    gelangen, falls das gesetzte Holz umstürzen sollte.</p>
                     <p>Für den Garten stand mir ein Wildholzzaun im Sinn. Das Holz ist nachhaltig im
                     Familiengarten erworben worden. Für die trockenen Füße des Zauns steht er rechts auf einem
                     Stein und links hängt er am Holzunterstand. Dort kann man den Zaun auch aushängen, falls
