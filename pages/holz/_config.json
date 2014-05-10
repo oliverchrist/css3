@@ -2,6 +2,7 @@
     "subnavi": [
         { "label":"Hocker" ,"href":"hocker.php", "target":"_self" },
         { "label":"Butter Streicher" ,"href":"butterStreicher.php", "target":"_self" },
+        { "label":"Bilderrahmen" ,"href":"bilderrahmen.php", "target":"_self" },
         { "label":"Löffel" ,"href":"loeffel.php", "target":"_self" },
         { "label":"Regal" ,"href":"regal.php", "target":"_self" },
         { "label":"Tablet Halterung" ,"href":"tablet.php", "target":"_self" },
